@@ -1,0 +1,9 @@
+# Don't commit Node Modules
+node_modules
+
+# Don't commit compiled assets
+public/scripts
+public/styles
+
+# Don't commit any log files
+*.log
