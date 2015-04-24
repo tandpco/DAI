@@ -1,0 +1,43 @@
+// Text Helpers
+.tr-init
+	text-transform none
+.tr-up
+	text-transform uppercase
+	
+// Layout Helpers
+.inline
+	display inline
+.inline-block
+	display inline-block
+	
+// Headers
+.shadow
+	color inherit
+	text-shadow 0.065em 0.065em 0 rgba($purple-secondary, 0.25)
+.shadow-beige
+	color inherit
+	text-shadow 0.065em 0.065em 0 $beige-secondary
+	
+// Alignment
+.align-center
+	text-align center
+.align-left
+	text-align left
+.align-right
+	text-align right
+	
+@media (max-width: $sm)
+	.align-center-sm
+		text-align center
+	.align-left-sm
+		text-align left
+	.align-right-sm
+		text-align right
+		
+@media (min-width: $sm)
+	.align-center-md
+		text-align center
+	.align-left-md
+		text-align left
+	.align-right-md
+		text-align right

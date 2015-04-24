@@ -1,0 +1,287 @@
+.site-header
+	height 80px
+	width 100%
+	.menu-button
+		display none
+	.site-branding,
+	.main-navigation
+		display inline-block
+		float left
+		line-height 80px
+		clear none
+		width auto
+	.site-branding
+		background-color $red-primary
+		position relative
+		width 15%
+		z-index 2
+		@media (max-width 468px)
+			width 50%
+		h1
+			margin 0
+			padding 0 15px
+			img
+				display inline
+				vertical-align middle
+		&:after
+			border-top 80px solid $red-primary
+			border-right 32px solid transparent
+			bottom 0
+			content ''
+			height 0
+			position absolute
+			right -32px
+			top 0
+			width 0
+	.main-navigation
+		padding-left 32px
+		width 85%
+		@media (max-width 468px)
+			width 50%
+			.donate
+				display none
+		.menu
+			float left
+			padding-right 15px
+			width 60%
+			clearfix()
+			@media (max-width 1199px)
+				display none
+			ul
+				float right
+				width 100%
+				li
+					float right
+					font-size 14px
+					margin-left 20px
+					text-transform uppercase
+					&:last-of-type
+						margin-left 0
+					a
+						color $beige-primary
+						font-weight 600
+		.button-group
+			float right
+			width 40%
+			clearfix()
+			@media (max-width 1199px)
+				width 100%
+			.institute
+				background-color #749293
+				color $purple-secondary
+				float right
+				max-width 50%
+				padding 0 47px 0 15px
+				position relative
+				text-align center
+				width auto
+				a
+					color inherit
+				&:after
+					border-bottom 80px solid #749293
+					border-left 32px solid transparent
+					bottom 0
+					content ''
+					height 0
+					left -32px
+					position absolute
+					top 0
+					width 0
+					z-index 1
+				@media (max-width 1199px)
+					display none
+			.donate
+				background-color #637E7F
+				color $purple-secondary
+				float right
+				padding 0 15px
+				position relative
+				text-align center
+				width 50%
+				a
+					color inherit
+				&:after
+					border-bottom 80px solid #637E7F
+					border-left 32px solid transparent
+					bottom 0
+					content ''
+					height 0
+					left -32px
+					position absolute
+					top 0
+					width 0
+					z-index 1
+				.donate-border
+					border 2px dashed #93B1B2
+					border-left 0
+					bottom 10px
+					left 10px
+					pointer-events none
+					position absolute
+					right 10px
+					top 10px
+					&:before
+						// border 1px dashed #93B1B2
+						background-image repeating-linear-gradient(#93B1B2, #93B1B2 6px, transparent 6px, transparent 12px)
+						background-repeat repeat
+						content ''
+						height 57px
+						left -15px
+						position absolute
+						transform rotate(20deg)
+						width 2px
+						z-index 3
+					&:after
+						border-bottom 2px dashed #93B1B2
+						bottom -2px
+						content ''
+						height 2px
+						left -25px
+						position absolute
+						width 30px
+						z-index 3
+						
+			@media (max-width 1199px)
+				.menu-button
+					background-color #749293
+					color $purple-secondary
+					display block
+					float right
+					padding 0 32px 0 15px
+					position relative
+					text-align center
+					width 50%
+					@media (max-width 468px)
+						width 100%
+					a
+						color inherit
+					&:after
+						border-bottom 80px solid #749293
+						border-left 32px solid transparent
+						bottom 0
+						content ''
+						height 0
+						left -32px
+						position absolute
+						top 0
+						width 0
+						z-index 1
+		&.toggled
+			.close
+				bottom 0
+				height 20px
+				position fixed
+				right 15px
+				top 15px
+				transition transform 300ms ease
+				width 20px
+				z-index 5
+				&:hover
+					transform scale(1.25)
+				&:after, &:before
+					background-color $purple-secondary
+					content ''
+					height 1px
+					position absolute
+					top 10px
+					width 100%
+				&:after
+					transform rotate(45deg)
+				&:before
+					transform rotate(-45deg)
+			.menu
+				background-color $blue-primary
+				bottom 0
+				display block
+				left 0
+				padding 0
+				position fixed
+				right 0
+				top 0
+				width 100%
+				z-index 4
+				ul
+					background-color transparent
+					bottom 0
+					display table
+					left 0
+					margin auto
+					max-height 100%
+					right 0
+					position absolute
+					text-align center
+					top 0
+					li
+						display block
+						clear both
+						float none
+						line-height 52px
+						margin 0
+						a
+							color lighten($beige-primary, 50%)
+							font-size 18px
+							letter-spacing 0.125em
+							
+/*
+ * Jumbotron Class
+ */
+.jumbotron
+	background-color $black-primary
+	overflow hidden
+	padding 175px 0 75px
+	position relative
+	@media (max-width: $sm)
+		padding 60px 0
+	&.main
+		background-image url('../images/header-bg.png')
+		background-size cover
+		@media (max-width: $sm)
+			background-position center
+	.trapezoid-background
+		background-color rgba(#749648, 0.6)
+		bottom 0
+		position absolute
+		top 0
+		height 100%
+		left 0
+		transform rotate(25deg)
+		width 70%
+		z-index 0
+		@media (max-width: $sm)
+			transform rotate(0deg)
+			width 100%
+		&:after
+			background-color rgba(#749648, 0.6)
+			// bottom 0
+			content ''
+			height 100%
+			position absolute
+			left 0%
+			top 100%
+			width 100%
+		&:before
+			background-color rgba(#749648, 0.6)
+			// bottom 0
+			content ''
+			height 100%
+			position absolute
+			left -20%
+			top 0
+			width 20%
+	.content
+		position relative
+		z-index 1
+	h1
+		font-size 72px
+		margin 0
+		@media (max-width: $sm)
+			font-size 32px
+	p
+		font-size 30px
+		font-weight 100
+		@media (max-width: $sm)
+			font-size 18px
+.content-break
+	background-color $black-primary
+	color $purple-secondary
+	// padding 175px 0 75px

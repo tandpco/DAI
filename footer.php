@@ -11,11 +11,24 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'dai' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'dai' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'dai' ), 'DAI', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
+		<div class="container">
+			<div class="row">
+				<div class="col col-sm-12 col-md-3 align-center-sm">
+					<img src="<?php echo get_template_directory_uri(); ?>/public/images/DAI_logo.png" height="66" width="157">
+				</div>
+				<div class="col col-sm-12 col-md-6">
+					<div class="footer-attr">
+						<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'footer-menu', 'container_class' => 'footer-menu' ) ); ?>
+						<address>P.O. Box 49278, Colorado Springs, CO 80849 / 1-866-907-7970</address>
+						<address>&copy; <?php echo date("Y"); ?> Development Associates International</address>
+					</div>
+				</div>
+				<div class="col col-sm-12 col-md-3 align-center-sm align-right-md">
+					<img src="<?php echo get_template_directory_uri(); ?>/public/images/footer_badge-one.png" style="display: inline; vertical-align: middle;">
+					<img src="<?php echo get_template_directory_uri(); ?>/public/images/footer_badge-two.png" style="display: inline; vertical-align: middle;">
+				</div>
+			</div><!-- End Row -->
+		</div><!-- End Container -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
