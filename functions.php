@@ -110,7 +110,13 @@ function dai_scripts() {
 
 	wp_enqueue_script( 'jquery-min', get_template_directory_uri() . '/public/js/jquery.min.js');
 
+	wp_enqueue_script( 'jquery-ui', get_template_directory_uri() . '/public/js/jquery-ui.js');
+
 	wp_enqueue_script( 'jquery-flipster', get_template_directory_uri() . '/public/js/jquery.flipster.min.js');
+
+	wp_enqueue_script( 'jquery-coverflow', get_template_directory_uri() . '/public/js/jquery.coverflow.js');
+
+	wp_enqueue_script( 'jquery-mousewheel', get_template_directory_uri() . '/public/js/jquery.mousewheel.js');
 
 	wp_enqueue_script( 'site-scripts', get_template_directory_uri() . '/public/js/site.js');
 

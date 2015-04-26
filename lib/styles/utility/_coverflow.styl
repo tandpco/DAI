@@ -1,0 +1,32 @@
+.coverflow .cover
+	width 320px
+	.details
+		position relative
+		.img
+			width 320px
+			height 240px
+			overflow hidden
+			&:before
+				content ''
+				display inline-block
+				height 100%
+				width 0px
+				margin-left -5px
+			img
+				display inline-block
+				vertical-align bottom
+		.btn
+			position absolute
+			top 190px
+			left 10px
+			width 300px
+			color white
+		.locale
+			visibility hidden
+		.description
+			visibility hidden
+.coverflow .cover.current .details
+	.locale
+		visibility visible
+	.description
+		visibility visible
