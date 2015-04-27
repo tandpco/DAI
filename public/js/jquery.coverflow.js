@@ -94,10 +94,10 @@
 			});
 
 			// Mousewheel
-			that.element.on('mousewheel', function(event, delta) {
+			/*that.element.on('mousewheel', function(event, delta) {
 				event.preventDefault();
 				that._setIndex(that.options.index - delta, true);
-			});
+			});*/
 
 			// Swipe
 			if ($.isFunction(that.element.swipe)) {
