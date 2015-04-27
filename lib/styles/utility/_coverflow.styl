@@ -1,3 +1,24 @@
+.coverflow-container .arrow
+	display block
+	position relative
+	width 64px
+	height 300px
+	z-index 500
+	cursor pointer
+	background-color $background
+	&.left
+		float left
+		margin-left -15px
+	&.right
+		float right
+		margin-right -15px
+	img
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+.coverflow-container .coverflow
+	display block
 .coverflow .cover
 	width 320px
 	.details
@@ -21,6 +42,7 @@
 			left 10px
 			width 300px
 			color white
+			display none
 		.locale
 			visibility hidden
 		.description
@@ -30,3 +52,5 @@
 		visibility visible
 	.description
 		visibility visible
+	.btn
+		display block

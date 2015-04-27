@@ -95,74 +95,66 @@ get_header(); ?>
 		<div class="container align-center-md">
 			<h2 class="shadow-beige tr-up align-center">How DAI Is Making an Impact</h2>
 			<p class="align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-			<div class="coverflow">
-				<div class="cover">
-					<div class="details">
-						<div class="img">
-							<img src="https://download.unsplash.com/photo-1428604467652-115d9d71a7f1" />
-						</div>
-						<a href="#" class="btn btn-outline inline-block tiny">Visit the page for this region</a>
-						<h3 class="locale">Location</h3>
-						<p class="description">Lorem ipsum dolor sit amet</p>
-					</div>
+			<div class="coverflow-container">
+				<div class="arrow left">
+					<img class="left" src="<?php echo get_template_directory_uri(); ?>/public/images/arrow-left.png" />
 				</div>
-				<div class="cover">
-					<div class="details">
-						<div class="img">
-							<img src="https://download.unsplash.com/photo-1428591501234-1ffcb0d6871f" />
-						</div>
-						<a href="#" class="btn btn-outline inline-block tiny">Visit the page for this region</a>
-						<h3 class="locale">Location</h3>
-						<p class="description">Lorem ipsum dolor sit amet</p>
-					</div>
+				<div class="arrow right">
+					<img class="right" src="<?php echo get_template_directory_uri(); ?>/public/images/arrow-right.png" />
 				</div>
-				<div class="cover">
-					<div class="details">
-						<div class="img">
-							<img src="https://download.unsplash.com/photo-1428342319217-5fdaf6d7898e" />
+				<div class="coverflow">
+					<div class="cover">
+						<div class="details">
+							<div class="img">
+								<img src="https://download.unsplash.com/photo-1428604467652-115d9d71a7f1" />
+							</div>
+							<a href="#" class="btn btn-outline inline-block tiny">Visit the page for this region</a>
+							<h3 class="locale">Location</h3>
+							<p class="description">Lorem ipsum dolor sit amet</p>
 						</div>
-						<a href="#" class="btn btn-outline inline-block tiny">Visit the page for this region</a>
-						<h3 class="locale">Location</h3>
-						<p class="description">Lorem ipsum dolor sit amet</p>
 					</div>
-				</div>
-				<div class="cover">
-					<div class="details">
-						<div class="img">
-							<img src="https://download.unsplash.com/photo-1423882503395-8571951e45cc" />
+					<div class="cover">
+						<div class="details">
+							<div class="img">
+								<img src="https://download.unsplash.com/photo-1428591501234-1ffcb0d6871f" />
+							</div>
+							<a href="#" class="btn btn-outline inline-block tiny">Visit the page for this region</a>
+							<h3 class="locale">Location</h3>
+							<p class="description">Lorem ipsum dolor sit amet</p>
 						</div>
-						<a href="#" class="btn btn-outline inline-block tiny">Visit the page for this region</a>
-						<h3 class="locale">Location</h3>
-						<p class="description">Lorem ipsum dolor sit amet</p>
 					</div>
-				</div>
-				<div class="cover">
-					<div class="details">
-						<div class="img">
-							<img src="https://download.unsplash.com/photo-1422433555807-2559a27433bd" />
+					<div class="cover">
+						<div class="details">
+							<div class="img">
+								<img src="https://download.unsplash.com/photo-1428342319217-5fdaf6d7898e" />
+							</div>
+							<a href="#" class="btn btn-outline inline-block tiny">Visit the page for this region</a>
+							<h3 class="locale">Location</h3>
+							<p class="description">Lorem ipsum dolor sit amet</p>
 						</div>
-						<a href="#" class="btn btn-outline inline-block tiny">Visit the page for this region</a>
-						<h3 class="locale">Location</h3>
-						<p class="description">Lorem ipsum dolor sit amet</p>
+					</div>
+					<div class="cover">
+						<div class="details">
+							<div class="img">
+								<img src="https://download.unsplash.com/photo-1423882503395-8571951e45cc" />
+							</div>
+							<a href="#" class="btn btn-outline inline-block tiny">Visit the page for this region</a>
+							<h3 class="locale">Location</h3>
+							<p class="description">Lorem ipsum dolor sit amet</p>
+						</div>
+					</div>
+					<div class="cover">
+						<div class="details">
+							<div class="img">
+								<img src="https://download.unsplash.com/photo-1422433555807-2559a27433bd" />
+							</div>
+							<a href="#" class="btn btn-outline inline-block tiny">Visit the page for this region</a>
+							<h3 class="locale">Location</h3>
+							<p class="description">Lorem ipsum dolor sit amet</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section><!-- section.bar -->
-<script>
-$(document).ready(function () {
-	$('.coverflow').coverflow({
-		/*easing: "easeOutElastic",*/
-		duration: "slow",
-		index: 2,
-		visible: "density",
-		/*selectedCss: {opacity: 1},
-		outerCss: {opacity: 0.1},*/
-		confirm: function() {
-			console.log('Confirm');
-		}
-	});
-});
-	
-</script>
 <?php get_footer(); ?>
