@@ -237,6 +237,38 @@
 		background-size cover
 		@media (max-width: $sm)
 			background-position center
+	.tabs
+		border-color #F5F2EA
+		border-style solid
+		border-width 1px 1px 0 1px
+		bottom 0
+		line-height 46px
+		list-style none
+		margin 0
+		padding 0
+		position absolute
+		z-index 1
+		li
+			cursor pointer
+			display inline-block
+			float left
+			font-size 14px
+			font-weight 300
+			letter-spacing 0.05em
+			line-height 48px
+			padding 0 25px
+			text-align center
+			transition all 300ms ease
+			@extend .tr-up
+			&:hover
+				background-color #F5F2EA
+				color $dark-gray
+			&.active
+				background-color #F5F2EA
+				color $dark-gray
+				font-weight 600
+			&:nth-child(n+2)
+				border-left 1px solid #F5F2EA
 	.trapezoid-background
 		background-color rgba(#749648, 0.6)
 		bottom 0
@@ -281,6 +313,11 @@
 		font-weight 100
 		@media (max-width: $sm)
 			font-size 18px
+		&.small
+			font-size 22px
+			margin-top 0
+			@media (max-width: $sm)
+				font-size 16px
 .content-break
 	background-color $black-primary
 	color $purple-secondary
