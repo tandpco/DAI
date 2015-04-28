@@ -38,9 +38,6 @@
         width: width
       });
     };
-    if ($(window).width() < 768) {
-      tabScroll();
-    }
     $('.tab').on('click', function(event) {
       var i, p, t;
       t = $(event.target);
@@ -51,6 +48,16 @@
       p.addClass('selected');
       $('.tab-panel').addClass('hidden');
       $('.' + i).removeClass('hidden');
+    });
+    $('.tabs li').on('click', function(e) {
+      var target;
+      target = $(this).attr('id');
+      $(this).addClass('active').siblings('.active').removeClass('active');
+      return $('.' + target).addClass('in').siblings('.in').removeClass('in');
+    });
+    $('.banner').unslider({
+      fluid: true,
+      dots: true
     });
     elementHeights = void 0;
     maxHeight = void 0;

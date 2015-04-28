@@ -116,6 +116,8 @@ function dai_scripts() {
 
 	wp_enqueue_script( 'jquery-coverflow', get_template_directory_uri() . '/public/js/jquery.coverflow.js');
 
+	wp_enqueue_script( 'unslider', get_template_directory_uri() . '/public/js/unslider.min.js');
+
 	wp_enqueue_script( 'site-scripts', get_template_directory_uri() . '/public/js/site.js');
 
 	wp_enqueue_script( 'dai-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );

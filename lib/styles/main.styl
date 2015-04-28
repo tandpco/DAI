@@ -11,12 +11,13 @@
 
 @import 'blocks/*'
 
-@import 'pages/*'
-
 body 
 	background-color #F5F2EA
 	& > *
 		font-family $font-sans
+
+#content
+	position relative
 
 .subscription-bar
 	background-color #4B4B4B
@@ -143,6 +144,9 @@ section
 		height 120px
 		line-height 120px
 		padding 0
+		&.reset
+			margin-bottom -30px
+			margin-top 30px
 		@media (max-width: $sm)
 			height auto
 			line-height auto
