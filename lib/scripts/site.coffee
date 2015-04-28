@@ -34,8 +34,6 @@ $ ->
 			width: width
 		$('.rail').css
 			width: width
-	if ($(window).width() < 768)
-		tabScroll()
 
 	# Tab Sorting Function
 	$('.tab').on 'click', (event) ->
@@ -48,6 +46,17 @@ $ ->
 		$('.tab-panel').addClass 'hidden'
 		$('.' + i).removeClass 'hidden'
 		return
+
+	# Dan's Tabs
+	$('.tabs li').on 'click', (e)->
+		target = $(this).attr('id')
+		$(this).addClass('active').siblings('.active').removeClass 'active'
+		$('.' + target).addClass('in').siblings('.in').removeClass 'in'
+
+	# Call Unslider
+	$('.banner').unslider
+		fluid: true
+		dots: true
 
 	# Column Equalizer
 	elementHeights = undefined

@@ -146,7 +146,165 @@ get_header(); ?>
 			</div><!-- .container -->
 		</section>
 	</div> 
-	<div class="tab-panel hidden staff">staff</div> 
+	<div class="tab-panel hidden staff">
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col col-sm-12">
+						<h2 class="shadow-beige tr-up">USA Staff</h2>
+						<ul class="staff-list">
+							<li class="staff-item">
+								<div class="staff-img">
+									<img src="<?php echo get_template_directory_uri() ?>/public/images/overstreet.png" />
+								</div>
+								<strong class="tr-up">Jane Overstreet</strong>
+								<p>President/CEO</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-sm-12">
+						<h2 class="shadow-beige tr-up">USA Staff Serving Overseas</h2>
+						<ul class="staff-list">
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+							<li class="staff-item">
+								<div class="staff-img">
+								</div>
+								<strong class="tr-up">Jean Yawo Adam</strong>
+								<p>Ministry Center Director</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div> 
 	<div class="tab-panel hidden history">history</div> 
 	<div class="tab-panel hidden mission">mission</div> 
 	<div class="tab-panel hidden faq">faq</div> 

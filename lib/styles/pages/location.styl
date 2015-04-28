@@ -1,0 +1,174 @@
+.page-template-page-location
+	.main
+		background-size cover
+		color $purple-secondary
+		margin 0 -15px
+		padding 250px 30px 30px
+		position relative
+		& > *
+			position relative
+			z-index 1
+		h1
+			font-size 48px
+			margin 0
+			text-transform uppercase
+		p
+			font-size 14px
+			font-weight 400
+			margin 0
+		&:after
+			background-image linear-gradient(rgba(black, 0), rgba(black, 0.6))
+			bottom 0
+			content ''
+			left 0
+			position absolute
+			right 0
+			top 0
+			z-index 0
+	.main-numbers
+		background-color $beige-primary
+		color $background
+		margin 0 -15px
+		padding 0
+		position relative
+		.col
+			padding-bottom 0
+			@media (max-width: $sm)
+				margin 0
+			p
+				font-size 32px
+				font-weight 300
+				small
+					display block
+					font-size 35%
+					font-weight 300
+					letter-spacing 0.05em
+					line-height 0
+					text-transform uppercase
+		&:after
+			border-bottom 2px dashed $background
+			border-top 2px dashed $background
+			bottom 5px
+			content ''
+			left 0
+			pointer-events none
+			position absolute
+			right 0
+			top 5px
+	.sidebar
+		background-color $purple-secondary
+		// bottom -30px
+		// left 58.3333333333333%
+		margin 0 -15px -45px
+		position relative
+		// right 0
+		// top 0
+		// @media (max-width: $sm)
+		// 	bottom initial
+		// 	left initial
+		// 	position relative
+		// 	right initial
+		// 	top initial
+		.tabs
+			background-color $beige-primary
+			left 0
+			line-height 48px
+			list-style none
+			margin 0
+			padding 0
+			position absolute
+			right 0
+			top 0
+			vertical-align middle
+			li
+				color $purple-secondary
+				cursor pointer
+				display inline-block
+				float left
+				font-size 12px
+				line-height inherit
+				max-width 20%
+				padding 0 10px
+				position relative
+				text-align center
+				text-transform uppercase
+				transition color 300ms ease
+				width 20%
+				@media (max-width: $sm)
+					font-size 10px
+				&:after
+					background-color $purple-secondary
+					content ''
+					height 24px
+					position absolute
+					right -1px
+					top 12px
+					width 1px
+				&:last-of-type:after
+					display none
+				&.active
+					background-color $purple-secondary
+					color $blue-primary
+					font-weight 600
+					&:after
+						display none
+					&:hover
+						color $blue-primary
+				&:hover
+					color $beige-secondary
+		.tab
+			left -10000%
+			opacity 0
+			padding-bottom 15px
+			padding-top 15px
+			position absolute
+			transition top 300ms ease, opacity 300ms ease
+			top -10px
+			.banner
+				padding 0 0 60px
+				overflow auto
+				position relative
+				ul
+					margin 0
+					padding 0 0 60px
+				li
+					list-style none
+					img
+						width 100%
+			.banner ul li
+					float left
+			&.in
+				left 0
+				opacity 1
+				position relative
+				top 0
+	.featured-stories
+		color $beige-primary
+		padding 15px 0
+		.col
+			padding-bottom 0
+			article
+				border 2px solid $beige-primary
+				color $dark-gray
+				padding 155px 10px 10px
+				position relative
+				@media (max-width: $sm)
+					margin-bottom 30px
+				.thumbnail
+					background-size cover
+					border-bottom 2px solid $beige-primary
+					height 145px
+					left 0
+					position absolute
+					right 0
+					top 0
+					width 100%
+				h4
+					font-size 13px
+					font-weight 600
+					margin 0
+					padding 0
+				p
+					font-size 13px
+					line-height 14px
+					margin 0
