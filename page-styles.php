@@ -33,6 +33,23 @@ get_header(); ?>
 				<a href='#' class='btn btn-fill btn-dashed inline-block small'>Learn More</a>
 				<a href='#' class='btn btn-trapezoid trap-bot-right inline-block tiny'>Donate Now</a>
 
+				<div class="row">
+					<div class="col col-sm-12">
+						<h2>Tab Control</h2>
+						<section class="tab-control">
+							<ul class="tabs clearfix">
+								<li class="selected"><a class="tab tr-up" id="one">One</a></li>
+								<li><a href="#" class="tab tr-up" id="two">Two</a></li>
+								<li><a href="#" class="tab tr-up" id="three">Three</a></li>
+							</ul>
+						</section>
+					</div>
+					<section>
+						<div class="tab-panel one">One</div> 
+						<div class="tab-panel hidden two">Two</div> 
+						<div class="tab-panel hidden three">Three</div> 
+					</section>
+				</div>
 			<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->

@@ -22,3 +22,13 @@ $ ->
 			n = if i == l - 1 then 0 else -1
 		$('.coverflow').coverflow 'index', i - n
 		return
+	$('.tab').on 'click', (event) ->
+		t = $(event.target)
+		p = t.parent('li')
+		i = t.attr('id')
+		event.preventDefault()
+		$('.tabs .selected').removeClass 'selected'
+		p.addClass 'selected'
+		$('.tab-panel').addClass 'hidden'
+		$('.' + i).removeClass 'hidden'
+		return

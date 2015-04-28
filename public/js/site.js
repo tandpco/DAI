@@ -16,7 +16,7 @@
       index: 2,
       visible: 'density'
     });
-    return $('.arrow').on('click', function(event) {
+    $('.arrow').on('click', function(event) {
       var i, l, n, t;
       t = $(event.target);
       i = $('.coverflow').coverflow('index');
@@ -28,6 +28,17 @@
         n = i === l - 1 ? 0 : -1;
       }
       $('.coverflow').coverflow('index', i - n);
+    });
+    return $('.tab').on('click', function(event) {
+      var i, p, t;
+      t = $(event.target);
+      p = t.parent('li');
+      i = t.attr('id');
+      event.preventDefault();
+      $('.tabs .selected').removeClass('selected');
+      p.addClass('selected');
+      $('.tab-panel').addClass('hidden');
+      $('.' + i).removeClass('hidden');
     });
   });
 
