@@ -22,3 +22,16 @@ $ ->
 			n = if i == l - 1 then 0 else -1
 		$('.coverflow').coverflow 'index', i - n
 		return
+	tabScroll = ->
+		width = null
+		$('.tabs li').each ->
+			width = (width + $(this).outerWidth())
+			console.log width
+		$('.tabs').css
+			left: 0
+			right: 0
+			width: width
+		$('.rail').css
+			width: width
+	if ($(window).width() < 768)
+		tabScroll()

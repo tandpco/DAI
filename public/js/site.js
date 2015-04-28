@@ -1,5 +1,6 @@
 (function() {
   $(function() {
+    var tabScroll;
     $('.close').on('click', function() {
       return $('#site-navigation').removeClass('toggled');
     });
@@ -16,7 +17,7 @@
       index: 2,
       visible: 'density'
     });
-    return $('.arrow').on('click', function(event) {
+    $('.arrow').on('click', function(event) {
       var i, l, n, t;
       t = $(event.target);
       i = $('.coverflow').coverflow('index');
@@ -29,6 +30,25 @@
       }
       $('.coverflow').coverflow('index', i - n);
     });
+    tabScroll = function() {
+      var width;
+      width = null;
+      $('.tabs li').each(function() {
+        width = width + $(this).outerWidth();
+        return console.log(width);
+      });
+      $('.tabs').css({
+        left: 0,
+        right: 0,
+        width: width
+      });
+      return $('.rail').css({
+        width: width
+      });
+    };
+    if ($(window).width() < 768) {
+      return tabScroll();
+    }
   });
 
 }).call(this);

@@ -16,13 +16,15 @@ get_header(); ?>
 						<h1 class="shadow tr-up">What We Do</h1>
 						<p class="small">Through educating, mentorting, consulting, and connecting, DAI provides Christian leaders with tools that will help them meet the challenges they face every day.</p>
 					</div>
-					<ul class="tabs">
-						<li>Overview</li>
-						<li>Educate</li>
-						<li>Mentor</li>
-						<li>Consult</li>
-						<li>Connect</li>
-					</ul>
+					<div class="rail">
+						<ul class="tabs">
+							<li>Overview</li>
+							<li>Educate</li>
+							<li>Mentor</li>
+							<li>Consult</li>
+							<li>Connect</li>
+						</ul>
+					</div>
 					<div class="trapezoid-background"></div>
 				</div>
 			</div><!-- End Row -->
