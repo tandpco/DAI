@@ -1,16 +1,8 @@
 (function() {
   $(function() {
-    var tabScroll;
+    var columnSelector, elementHeights, maxHeight, tabScroll;
     $('.close').on('click', function() {
       return $('#site-navigation').removeClass('toggled');
-    });
-    $('.slider').flipster(function() {
-      return {
-        itemContainer: 'ul',
-        itemSelector: 'li',
-        start: 'center',
-        enableMousewheel: false
-      };
     });
     $('.coverflow').coverflow({
       duration: 'slow',
@@ -47,8 +39,27 @@
       });
     };
     if ($(window).width() < 768) {
-      return tabScroll();
+      tabScroll();
     }
+    $('.tab').on('click', function(event) {
+      var i, p, t;
+      t = $(event.target);
+      p = t.parent('li');
+      i = t.attr('id');
+      event.preventDefault();
+      $('.tabs .selected').removeClass('selected');
+      p.addClass('selected');
+      $('.tab-panel').addClass('hidden');
+      $('.' + i).removeClass('hidden');
+    });
+    elementHeights = void 0;
+    maxHeight = void 0;
+    columnSelector = $('.program-column p');
+    elementHeights = $(columnSelector).map(function() {
+      return $(this).height();
+    }).get();
+    maxHeight = Math.max.apply(null, elementHeights);
+    return $(columnSelector).height(maxHeight);
   });
 
 }).call(this);

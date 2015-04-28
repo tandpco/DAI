@@ -1,0 +1,33 @@
+.tab-control
+	margin 0
+	padding 0
+	border-bottom 1px solid lighten($dark-gray, 75%)
+	.tabs
+		width 100%
+		margin 0
+		padding 0
+		li
+			font-size 14px
+			text-transform uppercase
+			display inline-block
+			list-style none
+			height 60px
+			float left
+			&.selected
+				background-color $red-primary
+				a
+					color white
+			a
+				color $beige-primary
+				font-weight 600
+				line-height 60px
+				font-weight bold
+				color $black-primary
+				padding 0 20px
+				text-decoration none
+				display block
+				height 60px
+.tab-panel
+	padding 20px
+	&.hidden
+		display none
