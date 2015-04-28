@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Home Page
+ * Template Name: Programs Page
  *
  * @package DAI
  */
@@ -13,67 +13,50 @@ get_header(); ?>
 			<div class="row">
 				<div class="col col-sm-12 col-md-8">
 					<div class="content">
-						<h1 class="shadow tr-up">DAI Empowers<br>Kingdom Leaders</h1>
-						<p class="tr-up">GROWING EFFECTIVE SERVANT LEADERS TO IMPACT THEIR LOCAL COMMUNITIES.</p>
-						<a href="#" class="btn btn-trapezoid trap-bot-right inline-block large">Learn More Now</a>
+						<h1 class="shadow tr-up">What We Do</h1>
+						<p class="small">Through educating, mentorting, consulting, and connecting, DAI provides Christian leaders with tools that will help them meet the challenges they face every day.</p>
 					</div>
+					<ul class="tabs">
+						<li>Overview</li>
+						<li>Educate</li>
+						<li>Mentor</li>
+						<li>Consult</li>
+						<li>Connect</li>
+					</ul>
 					<div class="trapezoid-background"></div>
 				</div>
 			</div><!-- End Row -->
 		</div><!-- End Container -->
 	</div><!-- End Jumbotron -->
 
-	<div class="subscription-bar">
-		<div class="col col-sm-12 col-md-8 subscribe">
-			<form>
-				<div class="col col-sm-12 col-md-8">
-					<h3 class="tr-up">Receive the DAI Monthly Newsletter</h3>
-					<p>Get monthly updates directly in your email inbox. We’ll send you the latest in our progress to empower Kingdom leaders.</p>
-				</div>
-				<div class="col col-sm-12 col-md-4">
-					<!-- <button type="submit">Subscribe Now</button> -->
-					<a href="#">Subscribe Now</a>
-				</div>
-			</form>
-		</div>
-		<div class="col col-sm-12 col-md-4 social">
-			<div class="col col-sm-3"><div class="social-icon fb"><i class="fa fa-facebook"></i></div></div>
-			<div class="col col-sm-3"><div class="social-icon rss"><i class="fa fa-rss"></i></div></div>
-			<div class="col col-sm-3"><div class="social-icon tw"><i class="fa fa-twitter"></i></div></div>
-			<div class="col col-sm-3"><div class="social-icon ln"><i class="fa fa-linkedin"></i></div></div>
-		</div>
-		<div class="stripes"></div>
-	</div><!-- End Subscription Bar -->
-
 	<section class="impact">
 		<div class="container">
-			<h2 class="shadow-beige tr-up align-center">How DAI Is Making an Impact</h2>
-			<p class="align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+			<p class="align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+			<p class="align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
 			<div class="row clear-bottom">
-				<div class="col col-sm-12 fifths align-center">
-					<img src="<?php echo get_template_directory_uri() ?>/public/images/index-education.png" />
-					<strong class="tr-up">Education</strong>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
+				<div class="col col-sm-12 col-md-3 align-center">
+					<img src="<?php echo get_template_directory_uri() ?>/public/images/program-learn.png" />
+					<strong class="shadow tr-up">Educate</strong>
+					<p>Whether in DAI’s multi-day workshops or Masters of Arts in Organizational Leadership Program, we strive to develop our leaders through education that combines principles and knowledge along with practical application.</p>
+					<a href="btn btn-fill btn-dashed inline-block small">Learn More</a>
 				</div>
-				<div class="col col-sm-12 fifths align-center">
-					<img src="<?php echo get_template_directory_uri() ?>/public/images/index-education.png" />
-					<strong class="tr-up">MAOL</strong>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
+				<div class="col col-sm-12 col-md-3 align-center">
+					<img src="<?php echo get_template_directory_uri() ?>/public/images/program-communicate.png" />
+					<strong class="shadow tr-up">Mentor</strong>
+					<p>Even the most seasoned and gifted leader needs to be led and mentored. Recognizing this truth, DAI provides mentoring relationships for students that blend intentional friendship, discipleship, and skills coaching. </p>
+					<a href="btn btn-fill btn-dashed inline-block small">Learn More</a>
 				</div>
-				<div class="col col-sm-12 fifths align-center">
-					<img src="<?php echo get_template_directory_uri() ?>/public/images/index-education.png" />
-					<strong class="tr-up">Mentoring</strong>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
+				<div class="col col-sm-12 col-md-3 align-center">
+					<img src="<?php echo get_template_directory_uri() ?>/public/images/program-suitcase.png" />
+					<strong class="shadow tr-up">Consult</strong>
+					<p>DAI consulting staff specialize in counseling leaders in the areas of leadership, strategic planning, organizational structure, finance, adult learning, research, and evaluation. This consulting helps leaders and ministries thrive in areas of struggle.</p>
+					<a href="btn btn-fill btn-dashed inline-block small">Learn More</a>
 				</div>
-				<div class="col col-sm-12 fifths align-center">
-					<img src="<?php echo get_template_directory_uri() ?>/public/images/index-education.png" />
-					<strong class="tr-up">Consulting</strong>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
-				</div>
-				<div class="col col-sm-12 fifths align-center">
-					<img src="<?php echo get_template_directory_uri() ?>/public/images/index-education.png" />
-					<strong class="tr-up">Connecting</strong>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
+				<div class="col col-sm-12 col-md-3 align-center">
+					<img src="<?php echo get_template_directory_uri() ?>/public/images/program-connect.png" />
+					<strong class="shadow tr-up">Connect</strong>
+					<p>DAI is committed to connecting leaders and their organizations to other ministries and resources in an effort to find solutions to the challenges they face.</p>
+					<a href="btn btn-fill btn-dashed inline-block small">Learn More</a>
 				</div>
 			</div><!-- .row -->
 		</div>
@@ -102,7 +85,7 @@ get_header(); ?>
 				<div class="arrow right">
 					<img class="right" src="<?php echo get_template_directory_uri(); ?>/public/images/arrow-right.png" />
 				</div>
-				<div class="coverflow clearfix">
+				<div class="coverflow">
 					<div class="cover">
 						<div class="details">
 							<div class="img">

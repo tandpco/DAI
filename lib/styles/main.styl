@@ -11,6 +11,8 @@
 
 @import 'blocks/*'
 
+@import 'pages/*'
+
 body 
 	background-color #F5F2EA
 	& > *
@@ -141,11 +143,23 @@ section
 		height 120px
 		line-height 120px
 		padding 0
+		@media (max-width: $sm)
+			height auto
+			line-height auto
+			padding 30px
+			a
+				display block
+				&:after, &:before
+					display none
 		h4
 			color #96995E
 			font-size 20px
 			margin 0 5px 0 0
 			vertical-align middle
+			@media (max-width: $sm)
+				display block
+				line-height 0
+				margin-bottom 5px
 			img
 				margin-right 15px
 				vertical-align middle
@@ -173,6 +187,21 @@ section
 			padding 0
 			position relative
 			vertical-align middle
+			@media (max-width $sm)
+				display none
+		&.bar-inline
+			margin 0 10px
+			position relative
+			@media (max-width: $sm)
+				margin 0
+			&:after
+				border 2px dashed $beige-secondary
+				bottom 5px
+				content ''
+				left 5px
+				position absolute
+				right 5px
+				top 5px
 	&.slider
 		color $beige-primary
 		h2
@@ -183,3 +212,48 @@ section
 			padding 0
 			li
 				padding 15px
+				
+table
+	table-layout fixed
+	width 100%
+	&.fixed
+		margin-bottom 0
+		min-height 450px
+		@media (max-width: $sm)
+			min-height none
+		&.half
+			min-height 225px
+			@media (max-width: $sm)
+				min-height none
+		tr
+			td, th
+				background-size cover
+				vertical-align bottom
+				a
+					background black
+					background rgba(black, 0.75)
+					color $purple-secondary
+					display block
+					font-size 14px
+					text-decoration none
+					text-align left
+					padding 10px 15px
+	&.spacing
+		border-collapse separate
+		border-spacing 10px
+	tr
+		td, th
+			border-spacing inherit
+			padding inherit
+			position relative
+	@media (max-width: $sm)
+		display block
+		tbody
+			display block
+		tr
+			display block
+			width 100%
+			td, th
+				display block
+				padding 150px 0 0 0
+				width 100%
