@@ -14,6 +14,130 @@
   position: absolute;
   width: 30%;
 }
+.page-template-page-programs .impact .educate {
+  max-width: 817px;
+}
+.page-template-page-programs .impact .educate h2 {
+  color: $beige-primary;
+  font-size: 26px;
+  letter-spacing: 5px;
+}
+.page-template-page-programs .impact .educate hr {
+  color: $beige-primary;
+  height: 1px;
+}
+.page-template-page-programs .impact .educate .row {
+  display: flex;
+}
+.page-template-page-programs .impact .educate .row .col-md-6 {
+  border: 1px solid $beige-primary;
+  height: 232px;
+  padding: 38px;
+  width: 418px;
+}
+.page-template-page-programs .impact .educate .row .col-md-6 h2,
+.page-template-page-programs .impact .educate .row .col-md-6 h5 {
+  margin: 0;
+}
+.page-template-page-programs .impact .educate .row .col-md-6 h5 {
+  font-weight: 600;
+}
+.page-template-page-programs .impact .educate .row .workshop {
+  margin-right: 50px;
+}
+.page-template-page-programs .impact .whatwedo {
+  max-width: 817px;
+}
+.page-template-page-programs .impact .whatwedo h2 {
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+.page-template-page-programs .impact .whatwedo .row {
+  display: flex;
+}
+.page-template-page-programs .impact .whatwedo .container {
+  background-color: rgba(0,0,0,0.1);
+}
+.page-template-page-programs .impact .whatwedo .container .testimonials {
+  font-weight: 700;
+  max-width: 100px;
+  margin: 0px 34px;
+  padding: 20px;
+  color: $black-primary;
+}
+.page-template-page-programs .impact .whatwedo .container img {
+  border: 3px solid $purple-primary;
+  border-radius: 50%;
+  margin: 0 48px;
+}
+.page-template-page-programs .impact .whatwedo .container .col-md-10 {
+  margin: 0 auto;
+  max-width: 500px;
+}
+.page-template-page-programs .impact .whatwedo .container .col-md-10 p {
+  font-style: italic;
+}
+.page-template-page-programs .impact .whatwedo .container .col-md-10 p:last-of-type {
+  font-weight: 700;
+}
+.page-template-page-programs .impact .whatwedo .container hr {
+  background-color: $white;
+  max-width: 695px;
+}
+.page-template-page-programs .impact .moal h2 img {
+  height: 30px;
+  width: 50px;
+}
+.page-template-page-programs .impact .moal .line {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.page-template-page-programs .impact .moal .rail .tabs {
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+}
+.page-template-page-programs .impact .moal .rail ul {
+  list-style: none;
+}
+.page-template-page-programs .impact .moal .rail ul li {
+  padding: 19px 0px;
+  color: $black-primary;
+  text-transform: uppercase;
+  font-size: 9px;
+  width: 20%;
+  text-align: center;
+  font-weight: 800;
+}
+.page-template-page-programs .impact .moal .rail ul .active {
+  background-color: $red-primary;
+  color: $white;
+}
+.page-template-page-programs .impact .moal .container {
+  margin-top: 100px;
+}
+.page-template-page-programs .impact .moal .overview {
+  margin: 52px auto;
+  width: 600px;
+}
+.page-template-page-programs .impact .moal .overview .overview-text {
+  color: $black-primary;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.page-template-page-programs .impact .moal .overview .btn {
+  float: right;
+  padding: 6px 18px;
+  border: 1px solid $beige-primary;
+  color: $beige-primary;
+}
+.page-template-page-programs .impact .moal .overview .btn .fa-angle-right {
+  margin-left: 10px;
+}
 .page-template-page-programs .program-column > p {
   margin-bottom: 0;
+}
+.hidden {
+  display: none;
 }
