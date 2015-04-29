@@ -31,7 +31,7 @@ get_header(); ?>
 	</div><!-- End Jumbotron -->
 
 	<section class="impact">
-		<div class="container overview tab in">
+		<div class="container overview tab">
 			<p class="align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
 			<p class="align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
 			<div class="row clear-bottom">
@@ -82,7 +82,7 @@ get_header(); ?>
 			</div>
 		</div>
 
-		<div class="container whatwedo mentor tab">
+		<div class="container whatwedo mentor tab in">
 			<h2 class="shadow-beige tr-up">Mentor</h2>
 			<hr>
 			<p>Even the most seasoned and gifted leader needs to be led and mentored.  Recognizing this truth, DAI provides mentoring relationships for students that blend intentional friendship, discipleship, and skills coaching. </p>

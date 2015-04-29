@@ -138,6 +138,28 @@
 .page-template-page-programs .program-column > p {
   margin-bottom: 0;
 }
-.hidden {
+.page-template-page-programs .hidden {
   display: none;
+}
+@media (max-width: 630px) {
+  .page-template-page-programs .impact .whatwedo .container {
+    text-align: center;
+  }
+  .page-template-page-programs .impact .whatwedo .container .testimonials {
+    margin: 33px auto;
+    padding: 0;
+  }
+  .page-template-page-programs .impact .whatwedo .container .row {
+    display: block;
+  }
+  .page-template-page-programs .impact .whatwedo .container .col-md-2 {
+    width: 150px;
+    margin: 0 auto;
+  }
+  .page-template-page-programs .impact .whatwedo .container .col-md-2 img {
+    margin: 0 auto;
+  }
+  .page-template-page-programs .impact .whatwedo .container .col-md-10 {
+    width: 273px;
+  }
 }
