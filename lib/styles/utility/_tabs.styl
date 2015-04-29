@@ -31,3 +31,30 @@
 	padding 20px
 	&.hidden
 		display none
+		
+.tab
+	left -10000%
+	opacity 0
+	padding-bottom 15px
+	padding-top 15px
+	position absolute
+	transition top 300ms ease, opacity 300ms ease
+	top -10px
+	.banner
+		padding 0 0 60px
+		overflow auto
+		position relative
+		ul
+			margin 0
+			padding 0 0 60px
+		li
+			list-style none
+			img
+				width 100%
+	.banner ul li
+			float left
+	&.in
+		left 0
+		opacity 1
+		position relative
+		top 0
