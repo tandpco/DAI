@@ -116,23 +116,23 @@
 .page-template-page-programs .impact .moal .container {
   margin-top: 100px;
 }
-.page-template-page-programs .impact .moal .overview {
+.page-template-page-programs .impact .moal .overview-container {
   margin: 52px auto;
   width: 600px;
 }
-.page-template-page-programs .impact .moal .overview .overview-text {
+.page-template-page-programs .impact .moal .overview-container .overview-text {
   color: $black-primary;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.page-template-page-programs .impact .moal .overview .btn {
+.page-template-page-programs .impact .moal .overview-container .btn {
   float: right;
   padding: 6px 18px;
   border: 1px solid $beige-primary;
   color: $beige-primary;
 }
-.page-template-page-programs .impact .moal .overview .btn .fa-angle-right {
+.page-template-page-programs .impact .moal .overview-container .btn .fa-angle-right {
   margin-left: 10px;
 }
 .page-template-page-programs .program-column > p {

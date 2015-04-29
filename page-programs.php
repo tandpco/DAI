@@ -17,11 +17,11 @@ get_header(); ?>
 					</div>
 					<div class="rail">
 						<ul class="tabs">
-							<li class="active">Overview</li>
-							<li>Educate</li>
-							<li>Mentor</li>
-							<li>Consult</li>
-							<li>Connect</li>
+							<li class="active" id="overview">Overview</li>
+							<li id="educate">Educate</li>
+							<li id="mentor">Mentor</li>
+							<li id="consult">Consult</li>
+							<li id="connect">Connect</li>
 						</ul>
 					</div>
 					<div class="trapezoid-background"></div>
@@ -31,7 +31,7 @@ get_header(); ?>
 	</div><!-- End Jumbotron -->
 
 	<section class="impact">
-		<div class="container  hidden">
+		<div class="container overview tab">
 			<p class="align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
 			<p class="align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
 			<div class="row clear-bottom">
@@ -62,7 +62,7 @@ get_header(); ?>
 			</div><!-- .row -->
 		</div>
 
-		<div class="container educate hidden">
+		<div class="container educate tab">
 			<h2 class="shadow-beige tr-up">Educate</h2>
 			<hr>
 			<p>Whether in DAI's multi-day workshops or Masters of Art in Organizational Leadership Program, we strive to develop our leaders through education that combines princples and knowledge along with practical application. We model our leadership style after Jesus Christ, encouraging leaders to serve others from a place of spiritual connection and integrity.</p>
@@ -82,7 +82,7 @@ get_header(); ?>
 			</div>
 		</div>
 
-		<div class="container whatwedo hidden">
+		<div class="container whatwedo mentor tab">
 			<h2 class="shadow-beige tr-up">Mentor</h2>
 			<hr>
 			<p>Even the most seasoned and gifted leader needs to be led and mentored.  Recognizing this truth, DAI provides mentoring relationships for students that blend intentional friendship, discipleship, and skills coaching. </p>
@@ -120,7 +120,7 @@ get_header(); ?>
 			</div>
 		</div>
 
-		<div class="container whatwedo hidden">
+		<div class="container whatwedo consult tab">
 			<h2 class="shadow-beige tr-up">Consult</h2>
 			<hr>
 			<p>DAI consulting staff specialize in counseling leaders in the areas of leadership, strategic planning, organizational structure, finance, adult learning, research, and evaluation. This consulting helps leaders and ministries thrive in areas of struggle.   </p>
@@ -158,7 +158,7 @@ get_header(); ?>
 			</div>
 		</div>
 
-	<div class="container whatwedo hidden">
+		<div class="container whatwedo connect tab">
 			<h2 class="shadow-beige tr-up">Connect</h2>
 			<hr>
 			<p>DAI is committed to connecting leaders and their organizations to other ministries and resources in an effort to find solutions to the challenges they face. No one solution fits all therefore, DAI also partners with other leadership development organizations in order to provide more opportunities to train leaders all over the world.</p>
@@ -196,7 +196,7 @@ get_header(); ?>
 			</div>
 		</div>
 
-	<div class="container whatwedo moal">
+		<div class="container whatwedo moal tab">
 			<h2 class="shadow-beige tr-up"><img src="<?php echo get_template_directory_uri() ?>/public/images/maol.png">MAOL</h2>
 			<hr class="line">
 			<div class="rail">
@@ -209,7 +209,7 @@ get_header(); ?>
 				</ul>
 			</div>
 			<hr class="line">
-			<div class="overview">
+			<div class="overview-container">
 				<p class="overview-text">Overview</p>
 				<p>The Master of Arts in Organizational Leadership (MAOL) is the most in-depth training we offer, where students experience character and skill development, as well as gain credibility from a master’s degree. The MAOL is offered in partnership with 20 local universities in 19 different countries serving approximately 1000 students each year.</p>
 				<a class="btn" href="#">Next<i class="fa fa-angle-right"></i></a>
