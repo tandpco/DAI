@@ -23,16 +23,16 @@ get_header(); ?>
 	<section class="tab-control">
 		<ul class="tabs clearfix">
 			<li class="selected"><a class="tab tr-up" id="overview">Overview</a></li>
-			<li><a href="#" class="tab tr-up" id="staff">USA Staff</a></li>
-			<li><a href="#" class="tab tr-up" id="history">History</a></li>
-			<li><a href="#" class="tab tr-up" id="mission">Mission And Vision</a></li>
-			<li><a href="#" class="tab tr-up" id="faq">FAQ</a></li>
-			<li><a href="#" class="tab tr-up" id="endorsements">Endorsements</a></li>
+			<li><a href="#" class="tr-up" id="staff">USA Staff</a></li>
+			<li><a href="#" class="tr-up" id="history">History</a></li>
+			<li><a href="#" class="tr-up" id="mission">Mission And Vision</a></li>
+			<li><a href="#" class="tr-up" id="faq">FAQ</a></li>
+			<li><a href="#" class="tr-up" id="endorsements">Endorsements</a></li>
 		</ul>
 	</section>
 	
 
-	<div class="tab-panel overview">
+	<div class="tab in overview">
 		<section class="who">
 			<div class="container">
 				<h2 class="shadow-beige tr-up">Who We Are</h2>
@@ -146,7 +146,7 @@ get_header(); ?>
 			</div><!-- .container -->
 		</section>
 	</div> 
-	<div class="tab-panel hidden staff">
+	<div class="tab staff">
 		<section>
 			<div class="container">
 				<div class="row">
@@ -305,9 +305,9 @@ get_header(); ?>
 			</div>
 		</section>
 	</div> 
-	<div class="tab-panel hidden history">history</div> 
-	<div class="tab-panel hidden mission">mission</div> 
-	<div class="tab-panel hidden faq">faq</div> 
-	<div class="tab-panel hidden endorsements">endorsements</div>
+	<div class="tab history">history</div> 
+	<div class="tab mission">mission</div> 
+	<div class="tab faq">faq</div> 
+	<div class="tab endorsements">endorsements</div>
 	
 <?php get_footer(); ?>
