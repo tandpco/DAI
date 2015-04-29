@@ -31,7 +31,7 @@ get_header(); ?>
 	</div><!-- End Jumbotron -->
 
 	<section class="impact">
-		<div class="container overview tab">
+		<div class="container overview tab in">
 			<p class="align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
 			<p class="align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
 			<div class="row clear-bottom">
@@ -68,12 +68,12 @@ get_header(); ?>
 			<p>Whether in DAI's multi-day workshops or Masters of Art in Organizational Leadership Program, we strive to develop our leaders through education that combines princples and knowledge along with practical application. We model our leadership style after Jesus Christ, encouraging leaders to serve others from a place of spiritual connection and integrity.</p>
 			<div class="container">
 				<div class="row align-center">
-					<div class="col-md-6 workshop">
+					<div class="col-md-6 workshop" data-target="workshop">
 						<img src="<?php echo get_template_directory_uri() ?>/public/images/workshop.png">
 						<h2 class="tr-up">Workshops</h2>
 						<h5 class="tr-up">Non-formal Eduaction</h5>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 moal" data-target="moal">
 						<img src="<?php echo get_template_directory_uri() ?>/public/images/maol.png">
 						<h2 class="tr-up">MAOL</h2>
 						<h5 class="tr-up">Masters of Arts in Organizational Leadership</h5>
