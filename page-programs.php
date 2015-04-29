@@ -15,7 +15,7 @@ get_header(); ?>
 						<h1 class="shadow tr-up">What We Do</h1>
 						<p class="small">Through educating, mentorting, consulting, and connecting, DAI provides Christian leaders with tools that will help them meet the challenges they face every day.</p>
 					</div>
-					<div class="rail">
+					<div class="rail desktop-menu">
 						<ul class="tabs">
 							<li class="active" id="overview">Overview</li>
 							<li id="educate">Educate</li>
@@ -31,7 +31,7 @@ get_header(); ?>
 	</div><!-- End Jumbotron -->
 
 	<section class="impact">
-		<div class="container overview tab">
+		<div class="container overview tab in">
 			<p class="align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
 			<p class="align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
 			<div class="row clear-bottom">
@@ -82,7 +82,7 @@ get_header(); ?>
 			</div>
 		</div>
 
-		<div class="container whatwedo mentor tab in">
+		<div class="container whatwedo mentor tab">
 			<h2 class="shadow-beige tr-up">Mentor</h2>
 			<hr>
 			<p>Even the most seasoned and gifted leader needs to be led and mentored.  Recognizing this truth, DAI provides mentoring relationships for students that blend intentional friendship, discipleship, and skills coaching. </p>
@@ -198,7 +198,6 @@ get_header(); ?>
 
 		<div class="container whatwedo moal tab">
 			<h2 class="shadow-beige tr-up"><img src="<?php echo get_template_directory_uri() ?>/public/images/maol.png">MAOL</h2>
-			<hr class="line">
 			<div class="rail">
 				<ul class="tabs">
 					<li class="active">Overview</li>
@@ -208,7 +207,6 @@ get_header(); ?>
 					<li>Where Moal is Offered</li>
 				</ul>
 			</div>
-			<hr class="line">
 			<div class="overview-container">
 				<p class="overview-text">Overview</p>
 				<p>The Master of Arts in Organizational Leadership (MAOL) is the most in-depth training we offer, where students experience character and skill development, as well as gain credibility from a master’s degree. The MAOL is offered in partnership with 20 local universities in 19 different countries serving approximately 1000 students each year.</p>
