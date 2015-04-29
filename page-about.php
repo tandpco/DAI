@@ -22,12 +22,12 @@ get_header(); ?>
 	</div><!-- End Jumbotron -->
 	<section class="tab-control">
 		<ul class="tabs clearfix">
-			<li class="selected"><a class="tab tr-up" id="overview">Overview</a></li>
-			<li><a href="#" class="tr-up" id="staff">USA Staff</a></li>
-			<li><a href="#" class="tr-up" id="history">History</a></li>
-			<li><a href="#" class="tr-up" id="mission">Mission And Vision</a></li>
-			<li><a href="#" class="tr-up" id="faq">FAQ</a></li>
-			<li><a href="#" class="tr-up" id="endorsements">Endorsements</a></li>
+			<li class="active" class="tr-up" id="overview">Overview</li>
+			<li class="tr-up" id="staff">USA Staff</li>
+			<li class="tr-up" id="history">History</li>
+			<li class="tr-up" id="mission">Mission And Vision</li>
+			<li class="tr-up" id="faq">FAQ</li>
+			<li class="tr-up" id="endorsements">Endorsements</li>
 		</ul>
 	</section>
 	
