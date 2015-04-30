@@ -64,6 +64,37 @@ function the_post_navigation() {
 	<?php
 }
 endif;
+if ( ! function_exists( 'dai_post_navigation' ) ) :
+/**
+ * Display navigation to next/previous post when applicable.
+ *
+ * @todo Remove this function when WordPress 4.3 is released.
+ */
+function dai_post_navigation() {
+	// Don't print empty markup if there's nowhere to navigate.
+	$previous = ( is_attachment() ) ? get_post( get_post()->post_parent ) : get_adjacent_post( false, '', true );
+	$next     = get_adjacent_post( false, '', false );
+
+	if ( ! $next && ! $previous ) {
+		return;
+	}
+	?>
+	<nav class="container navigation post-navigation" role="navigation">
+		<h2 class="screen-reader-text"><?php _e( 'Post navigation', 'dai' ); ?></h2>
+		<div class="nav-links">
+			<?php
+				previous_post_link( '<div class="nav-previous">%link</div>', 'Last Page' );
+				?>
+				<div class="nav-blog-home"><a href="/change-me" class="tr-up">Back to Blog Home</a></div>
+
+				<?php
+				next_post_link( '<div class="nav-next">%link</div>', 'Next Page' );
+			?>
+		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+	<?php
+}
+endif;
 
 if ( ! function_exists( 'dai_posted_on' ) ) :
 /**
@@ -83,12 +114,12 @@ function dai_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		_x( 'Posted on %s', 'post date', 'dai' ),
+		_x( 'Posted: %s', 'post date', 'dai' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
 	$byline = sprintf(
-		_x( 'by %s', 'post author', 'dai' ),
+		_x( 'by: %s', 'post author', 'dai' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 

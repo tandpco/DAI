@@ -6,7 +6,8 @@
  */
 
 get_header(); ?>
-
+	
+	<div class="leveler clearfix">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -14,13 +15,13 @@ get_header(); ?>
 
 			<?php get_template_part( 'content', 'single' ); ?>
 
-			<?php the_post_navigation(); ?>
+			<?php dai_post_navigation(); ?>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template
-				if ( comments_open() || get_comments_number() ) :
+				/*if ( comments_open() || get_comments_number() ) :
 					comments_template();
-				endif;
+				endif;*/
 			?>
 
 		<?php endwhile; // end of the loop. ?>
@@ -29,4 +30,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
+</div><!--leveler-->
 <?php get_footer(); ?>
