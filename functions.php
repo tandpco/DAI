@@ -128,6 +128,8 @@ function dai_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'dai_scripts' );
 
+add_theme_support( 'post-thumbnails' );
+
 /**
  * Implement the Custom Header feature.
  */

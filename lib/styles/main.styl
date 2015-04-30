@@ -261,3 +261,17 @@ table
 				display block
 				padding 150px 0 0 0
 				width 100%
+
+@media (min-width: $sm)
+	.pseudo-table
+		display table-row
+		float left
+		&.story
+			display table
+			margin-bottom 15px
+			width 100%
+		& > .col
+			float none
+			display table-cell
+			height 100%
+			vertical-align top

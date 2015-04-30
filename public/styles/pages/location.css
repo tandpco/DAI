@@ -69,8 +69,76 @@
 }
 .page-template-page-location .sidebar {
   background-color: $purple-secondary;
-  margin: 0 -15px -45px;
+  margin: 0 0 -30px;
   position: relative;
+}
+.page-template-page-location .sidebar .loading {
+  background-color: rgba(255,255,255,0.75);
+  bottom: 0;
+  color: #999;
+  display: none;
+  font-size: 48px;
+  left: 0;
+  padding-top: 200px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index: 1;
+}
+.page-template-page-location .sidebar a {
+  color: inherit;
+}
+.page-template-page-location .sidebar .banner {
+  height: 250px !important;
+}
+.page-template-page-location .sidebar .banner ul {
+  min-height: 220px;
+}
+.page-template-page-location .sidebar .banner li {
+  min-height: 100%;
+}
+.page-template-page-location .sidebar .banner li .content {
+  background-position: center;
+  background-size: cover;
+  height: 220px !important;
+  overflow: hidden;
+}
+.page-template-page-location .sidebar .banner ol {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+.page-template-page-location .sidebar .banner ol li {
+  background-color: transparent;
+  border: 1px solid $beige-primary;
+  border-radius: 50%;
+  height: 11px;
+  display: inline-block;
+  margin: 0 5px;
+  text-indent: -9999px;
+  transition: 300ms ease;
+  width: 11px;
+}
+.page-template-page-location .sidebar .banner ol li:hover {
+  background-color: $beige-secondary;
+}
+.page-template-page-location .sidebar .banner ol li.active {
+  background-color: $beige-primary;
+}
+.page-template-page-location .sidebar h4 {
+  color: $beige-primary;
+  margin: 0;
+}
+.page-template-page-location .sidebar p {
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 5px;
+}
+.page-template-page-location .sidebar p:not(:last-of-type) {
+  margin-bottom: 25px;
 }
 .page-template-page-location .sidebar .tabs {
   background-color: $beige-primary;
@@ -133,8 +201,8 @@
 .page-template-page-location .sidebar .tab {
   left: -10000%;
   opacity: 0;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-bottom: 30px;
+  padding-top: 30px;
   position: absolute;
   transition: top 300ms ease, opacity 300ms ease;
   top: -10px;
@@ -162,6 +230,134 @@
   opacity: 1;
   position: relative;
   top: 0;
+}
+.page-template-page-location .sidebar .country {
+  border: 2px solid $green-faded;
+  padding: 15px 15px 45px;
+  position: relative;
+}
+.page-template-page-location .sidebar .country img {
+  vertical-align: middle;
+}
+.page-template-page-location .sidebar .country span {
+  background-color: $green-faded;
+  border-top: 2px solid $green;
+  bottom: 0;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  left: 0;
+  line-height: 30px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.page-template-page-location .sidebar .story .col {
+  border: 2px solid $beige-primary;
+  padding-bottom: 0;
+}
+.page-template-page-location .sidebar .story .col.col-xs-3 {
+  background-size: cover;
+}
+.page-template-page-location .sidebar .story .col.col-xs-9 {
+  border-left: 0;
+  padding: 25px 20px;
+}
+.page-template-page-location .sidebar .story .col.col-xs-9 h5 {
+  margin: 0;
+  padding: 0;
+}
+.page-template-page-location .sidebar .story .col.col-xs-9 p {
+  font-size: 13px;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+}
+.page-template-page-location .sidebar .stories.story .story-holder {
+  left: 0;
+  opacity: 1;
+  position: relative;
+  top: 0;
+}
+.page-template-page-location .sidebar .story-holder article h1 {
+  font-size: 18px;
+}
+.page-template-page-location .sidebar .story-holder article p {
+  line-height: 22px;
+}
+.page-template-page-location .sidebar .story-holder .show__stories {
+  float: right;
+}
+.page-template-page-location .sidebar .gallery .col {
+  padding: 0 5px 0;
+}
+.page-template-page-location .sidebar .gallery .image,
+.page-template-page-location .sidebar .gallery .pseudo-table {
+  margin-bottom: 10px;
+  max-height: 150px;
+  overflow: hidden;
+}
+.page-template-page-location .sidebar .gallery .image {
+  border: 2px solid $beige-primary;
+}
+.page-template-page-location .sidebar .gallery .nav {
+  margin-top: 30px;
+}
+.page-template-page-location .sidebar .donate-form {
+  background-color: $beige-primary;
+  color: $purple-secondary;
+  padding: 30px;
+}
+.page-template-page-location .sidebar .donate-form img {
+  vertical-align: top;
+  margin-right: 15px;
+}
+.page-template-page-location .sidebar .donate-form .amounts {
+  margin: 0 -5px;
+}
+.page-template-page-location .sidebar .donate-form .amounts .col {
+  padding: 0 5px 15px;
+}
+.page-template-page-location .sidebar .donate-form span.amount {
+  background-color: $purple-secondary;
+  border: 2px solid $beige-secondary;
+  color: $beige-secondary;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  width: 100%;
+}
+.page-template-page-location .sidebar .donate-form span.amount.active {
+  border: 2px solid $blue-primary;
+  color: $blue-primary;
+  font-weight: 600;
+}
+.page-template-page-location .sidebar .donate-form .amnt {
+  position: relative;
+}
+.page-template-page-location .sidebar .donate-form .amnt i {
+  color: $beige-primary;
+  font-style: normal;
+  left: 25px;
+  position: absolute;
+  top: 6px;
+}
+.page-template-page-location .sidebar .donate-form input {
+  border: 2px solid $beige-secondary;
+  border-radius: 0;
+  font-size: 16px;
+  line-height: 32px;
+  outline: 0;
+  padding: 0 15px 0 25px;
+  vertical-align: middle;
+  width: 100%;
+}
+.page-template-page-location .sidebar .donate-form .btn {
+  text-align: center;
+  width: 100%;
 }
 .page-template-page-location .featured-stories {
   color: $beige-primary;
