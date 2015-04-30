@@ -1,4 +1,4 @@
-.btn
+.btn, .nav-next a, .nav-previous a
 	font-size 16px
 	font-weight 600
 	letter-spacing 0.075em
@@ -107,10 +107,45 @@ a, button
 						top -2px
 						transform skewX(25deg)
 						width 36px
+		&.btn-social
+			color $white
+			font-size 14px
+			line-height 32px
+			padding 0 20px
+			font-size 12px
+			text-align right
+			i.fa
+				margin-right 15px
+				font-size 18px
+				line-height 32px
+				float left
+		&.btn-em
+			background-color $email
+		&.btn-fb
+			background-color $facebook
+		&.btn-in
+			background-color $linkedin
+		&.btn-tw
+			background-color $twitter
+		&.btn-gp
+			background-color $gplus
+		&.btn-pn
+			background-color $pinterest
 						
-
+.nav-next a, .nav-previous a
+	display inline-block
+	border 2px solid
+	color $beige-primary
+	padding 0 20px
+	line-height 32px
+	&:hover
+		background-color $beige-primary
+		border 2px solid transparent
+		color $beige-secondary
+		line-height 32px
+		padding 0 20px
 // Social
-.social
+/*.social
 	list-style none
 	margin 0
 	padding 0
@@ -135,3 +170,4 @@ a, button
 					vertical-align middle
 			&.linked
 				background #0274B3
+*/
