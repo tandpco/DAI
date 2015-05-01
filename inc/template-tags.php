@@ -81,15 +81,20 @@ function dai_post_navigation() {
 	?>
 	<nav class="container navigation post-navigation" role="navigation">
 		<h2 class="screen-reader-text"><?php _e( 'Post navigation', 'dai' ); ?></h2>
-		<div class="nav-links">
+		<div class="nav-links row">
+			<div class="col col-sm-4">
 			<?php
-				previous_post_link( '<div class="nav-previous">%link</div>', 'Last Page' );
-				?>
-				<div class="nav-blog-home"><a href="/change-me" class="tr-up">Back to Blog Home</a></div>
-
-				<?php
-				next_post_link( '<div class="nav-next">%link</div>', 'Next Page' );
+				previous_post_link( '<div class="nav-previous">%link</div>', 'Last Post' );
 			?>
+			</div>
+
+				<div class="col col-sm-4 align-center"><a href="/blog" class="tr-up home">Back to Blog Home</a></div>
+
+			<div class="col col-sm-4 align-right ">
+			<?php
+				next_post_link( '<div class="nav-next">%link</div>', 'Next Post' );
+			?>
+			</div>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
 	<?php

@@ -1,25 +1,25 @@
-.page-template-page-location .main {
+.page-template-page-location section.main {
   background-size: cover;
   color: $purple-secondary;
   margin: 0 -15px;
   padding: 250px 30px 30px;
   position: relative;
 }
-.page-template-page-location .main > * {
+.page-template-page-location section.main > * {
   position: relative;
   z-index: 1;
 }
-.page-template-page-location .main h1 {
+.page-template-page-location section.main h1 {
   font-size: 48px;
   margin: 0;
   text-transform: uppercase;
 }
-.page-template-page-location .main p {
+.page-template-page-location section.main p {
   font-size: 14px;
   font-weight: 400;
   margin: 0;
 }
-.page-template-page-location .main:after {
+.page-template-page-location section.main:after {
   background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6));
   bottom: 0;
   content: '';
@@ -280,11 +280,24 @@
   position: relative;
   top: 0;
 }
+.page-template-page-location .sidebar .story-holder .jumbotron {
+  margin: -60px -30px 0;
+  padding: 100px 30px 30px;
+}
+.page-template-page-location .sidebar .story-holder .jumbotron h1 {
+  font-size: 24px;
+}
+.page-template-page-location .sidebar .story-holder .rrssb-buttons {
+  margin: 25px 0;
+}
 .page-template-page-location .sidebar .story-holder article h1 {
   font-size: 18px;
 }
 .page-template-page-location .sidebar .story-holder article p {
   line-height: 22px;
+}
+.page-template-page-location .sidebar .story-holder .nav-links {
+  display: none;
 }
 .page-template-page-location .sidebar .story-holder .show__stories {
   float: right;
@@ -397,4 +410,47 @@
   font-size: 13px;
   line-height: 14px;
   margin: 0;
+}
+.page-template-page-locations .main-numbers {
+  margin: 10px 0;
+  padding: 0;
+  position: relative;
+}
+.page-template-page-locations .main-numbers .col {
+  padding-bottom: 0;
+}
+@media (max-width: $sm) {
+  .page-template-page-locations .main-numbers .col {
+    margin: 0;
+  }
+}
+.page-template-page-locations .main-numbers .col p {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0;
+}
+.page-template-page-locations .main-numbers .col p small {
+  display: block;
+  font-size: 35%;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 0;
+  text-transform: uppercase;
+}
+.page-template-page-locations .pan-map {
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 600px;
+}
+.page-template-page-locations .mapplic-map-image {
+  background-color: #ebeae5;
+}
+.page-template-page-locations .mapplic-map-image svg {
+#e1dfd8
+  width: 100%;
+}
+.page-template-page-locations .mapplic-map-image svg path {
+  fill: #ebeae5;
+  stroke: #000;
+  stroke-opacity: 0.1;
 }

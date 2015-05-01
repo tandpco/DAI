@@ -261,7 +261,36 @@ table
 				display block
 				padding 150px 0 0 0
 				width 100%
-
+				
+.archive
+	.page-header
+		h1
+			border-bottom 1px solid $beige-secondary
+			font-size 18px
+			margin 15px 0 5px
+			padding-bottom 5px
+			text-transform uppercase
+	article
+		margin 0
+		padding 30px 0 0
+		&:nth-child(n+3)
+			border-top 1px solid $beige-secondary
+			margin 0
+		.entry-content
+			margin-top 5px
+		h1
+			font-size 22px
+			a
+				color $beige-primary
+				text-decoration none
+				&:hover
+					text-decoration underline
+		p:last-of-type
+			margin-bottom 0
+		.entry-meta
+			display none
+		.entry-footer
+			display none
 @media (min-width: $sm)
 	.pseudo-table
 		display table-row
@@ -275,3 +304,27 @@ table
 			display table-cell
 			height 100%
 			vertical-align top
+
+span.edit-link
+	background $purple-secondary
+	border 2px solid $purple-secondary
+	bottom 30px
+	display inline-block
+	font-size 16px
+	color $dark-gray
+	letter-spacing 0.075em
+	line-height 32px
+	padding 0 25px
+	position fixed
+	text-transform uppercase
+	transition all 300ms ease
+	font-weight 600
+	right 30px
+	a
+		color inherit
+		text-decoration none
+	&:hover
+		background-color $dark-gray
+		border 2px solid transparent
+		color $beige-primary
+		

@@ -87,12 +87,13 @@ $ ->
     url    = $(this).data('url')
     html   = $('.story-roll').html()
     $('.loading').fadeIn()
-    $('.stories .story-holder').load '/index.php/hello-world article.post', ->
+    $('.stories .story-holder').load '/index.php/hello-world #main', ->
       window.history.pushState('Story', 'Story', '?post=' + postID)
       $('.story-holder').addClass 'in'
       $('.story-holder').append '<a href="#" class="show__stories btn btn-outline inline-block small">Back to Stories</a>'
       $('.story-roll').hide()
       $('.loading').hide()
+      rrssbInit()
       $('.show__stories').on 'click', ->
         window.history.pushState('Home', 'Home', '?stories')
         $('.story-holder').removeClass('in').html ''
@@ -104,12 +105,13 @@ $ ->
       $('.tabs').find('#stories').addClass 'active'
       $('.tab.in').removeClass 'in'
       $('.stories').addClass 'in'
-      $('.stories .story-holder').load '/index.php/hello-world article.post', ->
+      $('.stories .story-holder').load '/index.php/hello-world #main', ->
         window.history.pushState('Story', 'Story', '?post=' + getParameterByName('post'))
         $('.story-holder').addClass 'in'
         $('.story-holder').append '<a href="#" class="show__stories btn btn-outline inline-block small">Back to Stories</a>'
         $('.story-roll').hide()
         $('.loading').hide()
+        rrssbInit()
         $('.show__stories').on 'click', ->
           window.history.pushState('Home', 'Home', '?stories')
           $('.story-holder').removeClass('in').html ''
@@ -118,7 +120,7 @@ $ ->
   $('.view__story').on 'click', ->
     if window.location.href.indexOf('location') >-1
       $('.loading').fadeIn()
-      $('.stories .story-holder').load '/index.php/hello-world article.post', ->
+      $('.stories .story-holder').load '/index.php/hello-world #main', ->
         window.history.pushState('Story', 'Story', '?post=')
         $('#stories').addClass('active').siblings('.active').removeClass 'active'
         $('.stories').addClass('in').siblings('.in').removeClass 'in'
@@ -126,7 +128,38 @@ $ ->
         $('.story-holder').append '<a href="#" class="show__stories btn btn-outline inline-block small">Back to Stories</a>'
         $('.story-roll').hide()
         $('.loading').hide()
+        rrssbInit()
         $('.show__stories').on 'click', ->
           window.history.pushState('Home', 'Home', '?stories')
           $('.story-holder').removeClass('in').html ''
           $('.story-roll').fadeIn()
+
+  # Blog Functions
+  $(window).on 'load resize', ->
+    if document.body.className.match('blog')
+      height = $(window).height() - ($('#masthead').height() + $('#colophon').height())
+      console.log height
+      if document.getElementsByClassName('posts-1').length
+        if $(window).height() > $('.post').height()
+          $('.post').css
+            height: height
+            display: 'table'
+            verticalAlign: 'bottom'
+            width: '100%'
+        else
+          $('.post').css
+            height: auto
+      else if $('.posts-2').length
+        console.log 'Test'
+        if $(window).height() > $('.posts').height()
+          $('.post').each ->
+            $(this).css
+              height: (height / 2)
+              display: 'table'
+              verticalAlign: 'bottom'
+              width: '100%'
+        else
+          $('.post').each ->
+            $(this).css
+              height: 'auto'
+              width: 'auto'

@@ -93,6 +93,15 @@ function dai_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Blog Sidebar', 'dai' ),
+		'id'            => 'sidebar-blog',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
 }
 add_action( 'widgets_init', 'dai_widgets_init' );
 
@@ -120,6 +129,10 @@ function dai_scripts() {
 
 	wp_enqueue_script( 'site-scripts', get_template_directory_uri() . '/public/js/site.js');
 
+	wp_enqueue_script( 'rrssb-script', get_template_directory_uri() . '/public/js/rrssb.min.js');
+
+	wp_enqueue_style( 'rrssb-css', get_template_directory_uri() . '/public/styles/rrssb.min.css');
+
 	wp_enqueue_script( 'dai-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -129,6 +142,14 @@ function dai_scripts() {
 add_action( 'wp_enqueue_scripts', 'dai_scripts' );
 
 add_theme_support( 'post-thumbnails' );
+
+function get_the_content_by_id($post_id) {
+  $page_data = get_page($post_id);
+  if ($page_data) {
+    return $page_data->post_content;
+  }
+  else return false;
+}
 
 /**
  * Implement the Custom Header feature.

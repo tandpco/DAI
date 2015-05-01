@@ -1,5 +1,5 @@
 .page-template-page-location
-  .main
+  section.main
     background-size cover
     color $purple-secondary
     margin 0 -15px
@@ -245,11 +245,20 @@
           position relative
           top 0
     .story-holder
+      .jumbotron
+        margin -60px -30px 0
+        padding 100px 30px 30px
+        h1
+          font-size 24px
+      .rrssb-buttons
+        margin 25px 0
       article
         h1
           font-size 18px
         p
           line-height 22px
+      .nav-links
+        display none
       .show__stories
         float right
     .gallery
@@ -339,3 +348,37 @@
           font-size 13px
           line-height 14px
           margin 0
+.page-template-page-locations
+  .main-numbers
+    margin 10px 0
+    padding 0
+    position relative
+    .col
+      padding-bottom 0
+      @media (max-width: $sm)
+        margin 0
+      p
+        font-size 32px
+        font-weight 300
+        margin 0
+        small
+          display block
+          font-size 35%
+          font-weight 300
+          letter-spacing 0.05em
+          line-height 0
+          text-transform uppercase
+  .pan-map
+    background-repeat no-repeat
+    background-position center center
+    height 600px
+  .mapplic-map-image 
+    background-color #EBEAE5
+    & svg
+      filter(drop-shadow(-10px 10px 5px rgba(black, 0.25)) drop-shadow(1px 2px 0 darken(#EBEAE5, 5%)))
+      width 100%
+      & path
+        fill #EBEAE5
+        stroke black
+        stroke-opacity 0.1
+        

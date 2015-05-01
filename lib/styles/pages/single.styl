@@ -1,20 +1,28 @@
-#page
+.single #page
 	.jumbotron
-		height 325px
-		padding-bottom 0
+		padding-bottom 15px
+		h1
+			font-size 48px
+			font-weight 600
+			line-height 52px
 		.entry-meta
-			font-size 22px
+			font-size 20px
+			font-weight 300
 			margin-top 0px
 			span
 				display inline-block
 				color $white
+				font-weight inherit
 				a
 					text-decoration none
 					color $white
-				&:vistied
+					font-weight inherit
+				&:visited
 					color $white
 				&.byline
-					margin-left 20px
+					margin-left 10px
+	.rrssb-buttons
+		margin 25px 0
 	.content-area
 		float left
 		margin 0 -25% 0 0
@@ -42,12 +50,10 @@
 		h1
 			font-size 16px
 #secondary
-	padding-top 15px
+	padding 30px
 	h1
 		font-size 14px
 		text-transform uppercase
-	.widget
-		margin-left 25px
 	ul
 		margin 0
 		padding 0
@@ -56,24 +62,44 @@
 	a
 		text-decoration none
 		color #424242
+	input
+		width 100%
 	select
 		width 80%
 		font-size 14px
 		padding 5px
 		background-color #F5F2EA
-.social
+.single .social
 	margin-top 25px
 	margin-bottom 25px
 .container.navigation.post-navigation
 	position relative
-	.nav-blog-home
-		position absolute
-		left 0
+	.home
 		display inline-block
 		width 100%
 		text-align center
-		color black
-		a.tr-up
-			color $black-primary
-			line-height 32px
-			
+		color $black-primary
+		line-height 32px
+.content-break
+	position relative
+	.content
+		position initial !important
+		& > *
+			position relative
+			z-index 1
+		&:before
+			background rgba(black, 0.75)
+			background linear-gradient(rgba(black, 0),rgba(black, 0.75))
+			bottom 0
+			content ''
+			left 0
+			position absolute
+			right 0
+			top 0
+			z-index 0
+@media (max-width: 992px)
+	.single #page .site-main
+		margin 0
+	.single #page .site-content .widget-area 
+		display block
+		width 100%

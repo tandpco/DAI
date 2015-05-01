@@ -99,5 +99,4 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
   add_action ( 'wp_ajax_nopriv_load-content', 'my_load_ajax_content' );
   add_action ( 'wp_ajax_load-content', 'my_load_ajax_content' );
 
-
 endif;

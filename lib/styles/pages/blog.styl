@@ -1,0 +1,82 @@
+.posts
+	margin-bottom -45px
+	.post
+		background-size cover
+		color $purple-secondary
+		padding 15px
+		position relative
+		article
+			display table-cell
+			padding 200px 15px 30px
+			vertical-align bottom
+			& > *
+				position relative
+				z-index 1
+			&:before
+				background rgba(0,0,0,0.75)
+				background linear-gradient(rgba(black, 0),rgba(black, 0.75))
+				bottom 0
+				content ''
+				left 0
+				position absolute
+				right 0
+				top 0
+				z-index 0
+		h1
+			color $purple-secondary
+			font-size 32px
+			font-weight 600
+			letter-spacing 0.025em
+			line-height 34px
+			margin-bottom 0
+			a
+				color inherit
+				text-decoration none
+		.entry-meta
+			display none
+		.entry-content
+			color inherit
+			margin-top 5px
+			p
+				color inherit
+				font-size 14px
+				line-height 18px
+				margin-top 0
+				&:last-of-type
+					margin 0 0 0
+		.entry-footer
+			display none
+	&.posts-2
+		@media (min-width: $sm)
+			display block
+			margin-bottom -45px
+			width 100%
+			.post
+				display block
+				height 50%
+				article
+					display table-cell
+					vertical-align bottom
+	&.posts-3
+		@media (min-width: $sm)
+			display table
+			width 100%
+		@media (min-width: $sm)
+			.post-1
+				display table-cell
+				vertical-align bottom
+	&.posts-4
+		margin-bottom -30px
+		@media (min-width: $sm)
+			display table
+			table-layout fixed
+			.post
+				display table-cell
+				vertical-align bottom
+#secondary
+	a:hover
+		text-decoration underline
+	aside
+		margin 0 0 15px
+		h1
+			margin 0

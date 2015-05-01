@@ -1,51 +1,73 @@
 // Text Helpers
 .tr-init
-	text-transform none
+  text-transform none
 .tr-up
-	text-transform uppercase
-	
+  text-transform uppercase
+  
 // Layout Helpers
 .inline
-	display inline
+  display inline
 .inline-block
-	display inline-block
-	
+  display inline-block
+  
 // Headers
 .shadow
-	color inherit
-	text-shadow 0.065em 0.065em 0 rgba($dark-gray, 0.15)
+  color inherit
+  text-shadow 0.065em 0.065em 0 rgba($dark-gray, 0.15)
 .shadow-beige
-	color inherit
-	text-shadow 0.065em 0.065em 0 $beige-secondary
+  color inherit
+  text-shadow 0.065em 0.065em 0 $beige-secondary
 .border
-	border-bottom 2px solid $beige-secondary
-	margin-bottom 15px
-	padding-bottom 5px
-	
+  border-bottom 2px solid $beige-secondary
+  margin-bottom 15px
+  padding-bottom 5px
+.dashed-border
+  background-color $purple-secondary
+  color $beige-primary
+  padding 30px 0 25px
+  position relative
+  &:after
+    border-bottom 2px dashed $background
+    border-top 2px dashed $background
+    bottom 10px
+    content ''
+    left 0
+    position absolute
+    right 0
+    top 10px
+    width 100%
+  h3
+    line-height 14px
+    margin 0
+  
 // Offsets
 .offset-bottom
-	margin-bottom -30px !important
+  margin-bottom -30px !important
 
 // Alignment
 .align-center
-	text-align center
+  text-align center
 .align-left
-	text-align left
+  text-align left
 .align-right
-	text-align right
-	
+  text-align right
+  
 @media (max-width: $sm)
-	.align-center-sm
-		text-align center
-	.align-left-sm
-		text-align left
-	.align-right-sm
-		text-align right
-		
+  .align-center-sm
+    text-align center
+  .align-left-sm
+    text-align left
+  .align-right-sm
+    text-align right
+    
 @media (min-width: $sm)
-	.align-center-md
-		text-align center
-	.align-left-md
-		text-align left
-	.align-right-md
-		text-align right
+  .align-center-md
+    text-align center
+  .align-left-md
+    text-align left
+  .align-right-md
+    text-align right
+    
+// Filter Function
+filter()
+  vendor('filter', arguments, only: webkit moz o official)
