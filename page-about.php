@@ -374,7 +374,76 @@ get_header(); ?>
 			</div>
 		</div>
 	</div> 
-	<div class="tab faq">faq</div> 
+	<div class="tab faq">
+		<section>
+			<div class="container">
+				<h2 class="shadow-beige tr-up align-center">FREQUENTLY ASKED QUESTIONS</h2>
+				<p class="align-center info">below we’ve answered the most common questions we get about DAI. If you have a question that isn’t addressed here feel free to use the contact page to reach us.</p>
+				<div class="accordion">
+					<div class="accordion-section">
+						<div class="accordion-icon"></div>
+						<div class="accordion-panel">
+							<a class="accordion-title" href="#accordion-0">Why is Indigenous Leadership Development important?</a>
+							<div id="accordion-0" class="accordion-content">
+								<p>The Church is growing rapidly across the majority world, through the efforts of evangelists and church planters. Yet this young church is trying to reach maturity and have an impact in the midst of countries where disease, civil unrest, natural disasters and poverty abound. Effective leadership is a challenge for anyone, let alone a believer who lacks access to training. Indigenous leadership development enables these leaders to have a tremendous impact in reaching the unreached and caring for the needy simply by working more effectively in their neighborhoods.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-section">
+						<div class="accordion-icon"></div>
+						<div class="accordion-panel">
+							<a class="accordion-title" href="#accordion-1">Is DAI affiliated with any church or denomination?</a>
+							<div id="accordion-1" class="accordion-content">
+								<p>Answer 1</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-section">
+						<div class="accordion-icon"></div>
+						<div class="accordion-panel">
+							<a class="accordion-title" href="#accordion-2">Does DAI provide training in the United States?</a>
+							<div id="accordion-2" class="accordion-content">
+								<p>Answer 2</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div> 
 	<div class="tab endorsements">endorsements</div>
-	
+<script type="text/javascript">
+/*$(document).ready(function () {
+$('.accordion').on('click', function(event) {
+  var bool = false, href, et, target, icon;
+  et = $(event.target);
+  console.log (et);
+  if (et.hasClass('accordion-title')){
+  	target = et;
+  	icon = et.parent('.accordion-panel').prev('accordion-icon');
+  } else if (et.hasClass('accordion-icon')){
+  	target = et.next('.accordion-panel').children('.accordion-title');
+  	icon = et;
+  } else if (et.hasClass('accordion-panel')){
+  	target = et.children('.accordion-title');
+  	icon = et.prev('.accordion-icon');
+  } else if (et.hasClass('accordion-section')){
+  	target = et.find('.accordion-title');
+  	icon = et.find('.accordion-icon');
+  }
+  console.log (target,icon);
+  if (target) {
+    event.preventDefault();
+    href = target.attr('href');
+    bool = !target.hasClass('active');
+    $('.accordion .active').removeClass('active');
+    $('.accordion .open').slideUp('300').removeClass('open');
+    if (bool) {
+      target.addClass('active');
+      $('.accordion ' + href).slideDown('300').addClass('open');
+    }
+  }
+});
+});*/
+</script>
 <?php get_footer(); ?>

@@ -22,6 +22,34 @@
       }
       $('.coverflow').coverflow('index', i - n);
     });
+    $('.accordion').on('click', function(event) {
+      var bool, et, href, icon, target;
+      bool = false;
+      href = void 0;
+      et = void 0;
+      target = void 0;
+      icon = void 0;
+      et = $(event.target);
+      if (et.hasClass('accordion-title')) {
+        target = et;
+        icon = et.parent('.accordion-panel').prev('.accordion-icon');
+      } else if (et.hasClass('accordion-icon')) {
+        target = et.next('.accordion-panel').children('.accordion-title');
+        icon = et;
+      }
+      if (target) {
+        event.preventDefault();
+        href = target.attr('href');
+        bool = !target.hasClass('active');
+        $('.accordion .active').removeClass('active');
+        $('.accordion .open').slideUp('300').removeClass('open');
+        if (bool) {
+          target.addClass('active');
+          icon.addClass('active');
+          $('.accordion ' + href).slideDown('300').addClass('open');
+        }
+      }
+    });
     tabScroll = function() {
       var width;
       width = null;
