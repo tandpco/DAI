@@ -72,11 +72,35 @@
 .single .social
 	margin-top 25px
 	margin-bottom 25px
+.nav-next a, .nav-previous a
+	display inline-block
+	border 2px solid
+	color $beige-primary
+	&:hover
+		background-color $beige-primary
+		border 2px solid transparent
+		color $beige-secondary
+		line-height 42px
+		padding 0 20px
 .container.navigation.post-navigation
 	position relative
+	.nav-previous
+		background-repeat no-repeat
+		background-position left center
+		a
+			padding 0 20px 0 20px
+			line-height 42px
+	.nav-next
+		background-repeat no-repeat
+		background-position right center
+		a
+			padding 0 20px 0 20px
+			line-height 42px
 	.home
 		display inline-block
-		width 100%
+		width 50%
+		margin-left 25%
+		margin-right 25%
 		text-align center
 		color $black-primary
 		line-height 32px
