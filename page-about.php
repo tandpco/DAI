@@ -302,11 +302,78 @@ get_header(); ?>
 						</ul>
 					</div>
 				</div>
+				<div class="row">
+					<h2 class="shadow-beige tr-up">Board of Directors</h2>
+					<ul class="board-list">
+						<li class="board-item">
+							<strong>David Wessner (Chairperson)</strong>
+							<p>Senior Fellow in Residence, University of Minnesota,<br /> School of Public Health<br /> Excelsior, Minnesota</p>
+						</li>
+						<li class="board-item">
+							<strong>Shaun Sipe (Vice Chairperson)</strong>
+							<p>Senior Vice President of Human Capital,<br /> Barnhart Crane and Rigging <br />Memphis, Tennessee</p>
+						</li>
+						<li class="board-item">
+							<strong>Kathleen Delph (Secretary)</strong>
+							<p>Associate Executive Director of University Advancement, <br />Pacific Lutheran University<br /> Seattle, Washington</p>
+						</li>
+						<li class="board-item">
+							<strong>Dr. Jason Ferenczi</strong>
+							<p>Program Officer, Cornerstone Trust Grand Rapids, Michigan</p>
+						</li>
+						<li class="board-item">
+							<strong>Jane Overstreet</strong>
+							<p>President / CEO, Development Associates International<br /> Colorado Springs, Colorado</p>
+						</li>
+						<li class="board-item">
+							<strong>Jan Stump</strong>
+							<p>Executive Director, ACSI Education Foundation <br />Colorado Springs, Colorado</p>
+						</li>
+						<li class="board-item">
+							<strong>Brian E. Walck</strong>
+							<p>Director, Videre Inc. <br />Southlake, Texas</p>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 	</div> 
-	<div class="tab history">history</div> 
-	<div class="tab mission">mission</div> 
+	<div class="tab history">
+		<div class="container">
+			<div class="row">
+				<div class="col col-sm-12">
+					<div class="placeholder"></div>
+					<div class="hist-txt">
+						<h2 class="shadow-beige tr-up">Brief History</h2>
+						<p>In 1990, distinguished professors Dr. James Engel and Dr. David Fraser dared to believe that they could make a difference in the lives and ministries of key leaders in the Majority world by founding The Center for Organizational Excellence at Eastern College. Their dream was to grow Christ-like leaders to impact God’s kingdom.</p>
+						<p>That dream has grown into an organization called DAI (Development Associates International) serving leaders throughout the Majority world since 1996.  DAI provides practical applied self-paced learning, mentoring, consulting and more in order to bring change—change in the effectiveness and integrity of Christian leaders and their ministries.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> 
+	<div class="tab mission">
+		<div class="container">
+			<div class="row">
+				<div class="col col-sm-12">
+					<div class="placeholder"></div>
+					<h2 class="shadow-beige tr-up">Mission</h2>
+					<p>Development Associates International (DAI) enhances the integrity and effectiveness of Christian leaders worldwide so that the Church can fulfill its role in extending the Kingdom of God.</p>
+					<div class="placeholder"></div>
+					<h2 class="shadow-beige tr-up">Vision</h2>
+					<p>DAI envisions Christian leaders who demonstrate by their lives and leadership that they:</p>
+					<ul class="vision-list">
+						<li>Serve as leaders to enable others to use their gifts, build effective teams, delegate wisely and cultivate servant leadership in others.</li>
+						<li>Lead effective learning organizations that have clear vision, utilize research well, set realistic goals and continually evaluate results in order to learn from successes and failures.</li>
+						<li>Demonstrate integrity and accountability in their personal lives and organizational ministries, especially regarding finances.</li>
+						<li>Show a commitment to a lifetime of spiritual formation and living a balanced lifestyle. </li>
+						<li>Live a life of humility resulting in a greater commitment to building God’s Kingdom than to building their own kingdom.</li>
+						<li>Practice justice by leading ministries that result in social transformation, the empowerment of men, women and the poor, plus the evangelization and discipling of people with the least access to the Gospel.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div> 
 	<div class="tab faq">faq</div> 
 	<div class="tab endorsements">endorsements</div>
 	
