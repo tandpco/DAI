@@ -103,6 +103,7 @@
 		min-height 190px
 		height 190px
 	.vision-list
+		margin 0
 		li
 			list-style none
 			background-image url("../images/bullet.png")
@@ -117,3 +118,39 @@
 		max-width 65%
 		width 100%
 		margin 0 auto 45px auto
+.endorsements
+	.info
+		max-width 65%
+		width 100%
+		margin 0 auto 45px auto
+	.endorsement-list
+		border-top 2px dashed $dark-gray
+		width 100%
+		margin 0
+		padding 0
+		.endorsement-item
+			list-style none
+			display inline-block
+			width 100%
+			background-color $beige-secondary
+			margin 20px 0
+			padding 15px 0
+			.endorsement-img
+				display inline-block
+				min-width 50px
+				width 10%
+				padding-top 15px
+				float left
+				img
+					border 5px solid $dark-gray
+					border-radius 50%
+			.endorsement-panel
+				display inline-block
+				width 84%
+				float left
+			&:nth-child(even)
+				.endorsement-img
+					float right
+				.endorsement-panel
+					text-align right
+					float right

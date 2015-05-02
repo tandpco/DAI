@@ -411,7 +411,43 @@ get_header(); ?>
 			</div>
 		</section>
 	</div> 
-	<div class="tab endorsements">endorsements</div>
+	<div class="tab endorsements">
+		<section>
+			<div class="container">
+				<h2 class="shadow-beige tr-up align-center">Endorsements</h2>
+				<p class="align-center info">We’re blessed to have the support and endorsement of many wonderful. Below are some kind words from individuals that have witnessed the impact of our programs.</p>
+				<ul class="endorsement-list">
+					<li class="endorsement-item">
+						<div class="endorsement-img align-center">
+							<img src="<?php echo get_template_directory_uri() ?>/public/images/endorsement.png">
+						</div>
+						<div class="endorsement-panel">
+							<p class="endorsement-content"><q>I have learned that the purpose of submission to God is freedom from the terrible burden of needing to get my own way, from the obsession that demands things must go as I believe they should. The result is a vast sense of relief. I am amazed at the wonderful freedom I now have as a result of learning this discipline. Thank you DAI.</q></p>
+							<strong class="endorsement-author">- Daniel, student in Spiritual Formation course, Uganda</strong>
+						</div>
+					</li>
+					<li class="endorsement-item">
+						<div class="endorsement-img align-center">
+							<img src="<?php echo get_template_directory_uri() ?>/public/images/endorsement.png">
+						</div>
+						<div class="endorsement-panel">
+							<p class="endorsement-content"><q>I have learned that the purpose of submission to God is freedom from the terrible burden of needing to get my own way, from the obsession that demands things must go as I believe they should. The result is a vast sense of relief. I am amazed at the wonderful freedom I now have as a result of learning this discipline. Thank you DAI.</q></p>
+							<strong class="endorsement-author">- Daniel, student in Spiritual Formation course, Uganda</strong>
+						</div>
+					</li>
+					<li class="endorsement-item">
+						<div class="endorsement-img align-center">
+							<img src="<?php echo get_template_directory_uri() ?>/public/images/endorsement.png">
+						</div>
+						<div class="endorsement-panel">
+							<p class="endorsement-content"><q>I have learned that the purpose of submission to God is freedom from the terrible burden of needing to get my own way, from the obsession that demands things must go as I believe they should. The result is a vast sense of relief. I am amazed at the wonderful freedom I now have as a result of learning this discipline. Thank you DAI.</q></p>
+							<strong class="endorsement-author">- Daniel, student in Spiritual Formation course, Uganda</strong>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
 <script type="text/javascript">
 /*$(document).ready(function () {
 $('.accordion').on('click', function(event) {

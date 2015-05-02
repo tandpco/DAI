@@ -136,6 +136,9 @@
   min-height: 190px;
   height: 190px;
 }
+.mission .vision-list {
+  margin: 0;
+}
 .mission .vision-list li {
   list-style: none;
   background-image: url("../images/bullet.png");
@@ -150,4 +153,46 @@
   max-width: 65%;
   width: 100%;
   margin: 0 auto 45px auto;
+}
+.endorsements .info {
+  max-width: 65%;
+  width: 100%;
+  margin: 0 auto 45px auto;
+}
+.endorsements .endorsement-list {
+  border-top: 2px dashed $dark-gray;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.endorsements .endorsement-list .endorsement-item {
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+  background-color: $beige-secondary;
+  margin: 20px 0;
+  padding: 15px 0;
+}
+.endorsements .endorsement-list .endorsement-item .endorsement-img {
+  display: inline-block;
+  min-width: 50px;
+  width: 10%;
+  padding-top: 15px;
+  float: left;
+}
+.endorsements .endorsement-list .endorsement-item .endorsement-img img {
+  border: 5px solid $dark-gray;
+  border-radius: 50%;
+}
+.endorsements .endorsement-list .endorsement-item .endorsement-panel {
+  display: inline-block;
+  width: 84%;
+  float: left;
+}
+.endorsements .endorsement-list .endorsement-item:nth-child(even) .endorsement-img {
+  float: right;
+}
+.endorsements .endorsement-list .endorsement-item:nth-child(even) .endorsement-panel {
+  text-align: right;
+  float: right;
 }
