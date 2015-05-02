@@ -1,0 +1,21 @@
+.jumbotron.about {
+  height: 400px;
+}
+.jumbotron.about p {
+  font-size: 22px;
+  margin-top: 0px;
+}
+.container .bio-img {
+  display: inline-block;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 185px;
+  max-height: 185px;
+  background-color: $red-primary;
+  border: 5px solid $blue-secondary;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.container .bio-content .btn {
+  padding: 10px;
+}

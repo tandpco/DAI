@@ -448,38 +448,5 @@ get_header(); ?>
 			</div>
 		</section>
 	</div>
-<script type="text/javascript">
-/*$(document).ready(function () {
-$('.accordion').on('click', function(event) {
-  var bool = false, href, et, target, icon;
-  et = $(event.target);
-  console.log (et);
-  if (et.hasClass('accordion-title')){
-  	target = et;
-  	icon = et.parent('.accordion-panel').prev('accordion-icon');
-  } else if (et.hasClass('accordion-icon')){
-  	target = et.next('.accordion-panel').children('.accordion-title');
-  	icon = et;
-  } else if (et.hasClass('accordion-panel')){
-  	target = et.children('.accordion-title');
-  	icon = et.prev('.accordion-icon');
-  } else if (et.hasClass('accordion-section')){
-  	target = et.find('.accordion-title');
-  	icon = et.find('.accordion-icon');
-  }
-  console.log (target,icon);
-  if (target) {
-    event.preventDefault();
-    href = target.attr('href');
-    bool = !target.hasClass('active');
-    $('.accordion .active').removeClass('active');
-    $('.accordion .open').slideUp('300').removeClass('open');
-    if (bool) {
-      target.addClass('active');
-      $('.accordion ' + href).slideDown('300').addClass('open');
-    }
-  }
-});
-});*/
-</script>
+
 <?php get_footer(); ?>
