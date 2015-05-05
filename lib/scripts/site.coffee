@@ -22,6 +22,33 @@ $ ->
     $('.coverflow').coverflow 'index', i - n
     return
 
+  # Accordion Function
+  $('.accordion').on 'click', (event) ->
+    bool = false
+    href = undefined
+    et = undefined
+    target = undefined
+    icon = undefined
+    et = $(event.target)
+    if et.hasClass('accordion-title')
+      target = et
+      icon = et.parent('.accordion-panel').prev('.accordion-icon')
+    else if et.hasClass('accordion-icon')
+      target = et.next('.accordion-panel').children('.accordion-title')
+      icon = et
+    if target
+      event.preventDefault()
+      href = target.attr('href')
+      bool = !target.hasClass('active')
+      $('.accordion .active').removeClass 'active'
+      $('.accordion .open').slideUp('300').removeClass 'open'
+      if bool
+        target.addClass 'active'
+        icon.addClass 'active'
+        $('.accordion ' + href).slideDown('300').addClass 'open'
+    return
+
+
   # Responsive function for Tabs
   tabScroll = ->
     width = null

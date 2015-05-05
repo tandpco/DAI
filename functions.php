@@ -111,7 +111,7 @@ add_action( 'widgets_init', 'dai_widgets_init' );
 function dai_scripts() {
 	wp_enqueue_style( 'dai-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'coverflow-styles', get_template_directory_uri() . '/public/styles/flipster.min.css' );
+	/*wp_enqueue_style( 'coverflow-styles', get_template_directory_uri() . '/public/styles/flipster.min.css' );*/
 
 	wp_enqueue_style( 'site-styles', get_template_directory_uri() . '/public/styles/main.css' );
 
@@ -121,7 +121,7 @@ function dai_scripts() {
 
 	wp_enqueue_script( 'jquery-ui', get_template_directory_uri() . '/public/js/jquery-ui.js');
 
-	wp_enqueue_script( 'jquery-flipster', get_template_directory_uri() . '/public/js/jquery.flipster.min.js');
+	/*wp_enqueue_script( 'jquery-flipster', get_template_directory_uri() . '/public/js/jquery.flipster.min.js');*/
 
 	wp_enqueue_script( 'jquery-coverflow', get_template_directory_uri() . '/public/js/jquery.coverflow.js');
 
