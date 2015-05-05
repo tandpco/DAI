@@ -163,3 +163,6 @@ $ ->
             $(this).css
               height: 'auto'
               width: 'auto'
+
+  document.getElementById('map').ondragstart = ->
+    false

@@ -372,13 +372,35 @@
     background-repeat no-repeat
     background-position center center
     height 600px
-  .mapplic-map-image 
-    background-color #EBEAE5
-    & svg
-      filter(drop-shadow(-10px 10px 5px rgba(black, 0.25)) drop-shadow(1px 2px 0 darken(#EBEAE5, 5%)))
-      width 100%
-      & path
-        fill #EBEAE5
-        stroke black
-        stroke-opacity 0.1
-        
+  .map-clickable-region
+    color $beige-primary
+    a
+      text-decoration none
+    .show-sm
+      display none
+    @media (max-width: $sm)
+      img
+        display none
+      h2
+        position relative !important
+        top initial !important
+        left initial
+        right initial
+      .show-sm
+        background-color #EDEBE5
+        display block
+        margin-bottom 5px
+        a
+          border-top 1px solid rgba(black, 0.25)
+          color $purple-secondary
+          display block
+          line-height 60px
+          padding 0 30px
+          &.green
+            background-color rgba(#74954B, 0.8)
+          &.purple
+            background-color rgba(#473751, 0.8)
+          &.blue
+            background-color rgba(#618586, 0.8)
+          &.red
+            background-color rgba(#9F2531, 0.8)

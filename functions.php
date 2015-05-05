@@ -157,6 +157,15 @@ function get_the_content_by_id($post_id) {
 //require get_template_directory() . '/inc/custom-header.php';
 
 /**
+ * Import Settings Page
+ */
+// require get_template_directory() . '/inc/custom-admin.php';
+
+if (is_admin()) {
+ include('settings/options/options-init.php');
+}
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';

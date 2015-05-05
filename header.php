@@ -20,13 +20,16 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 <?php wp_head(); ?>
+
+<?php $options = get_option('dai'); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 
 	<header id="masthead" class="site-header" role="banner">
-
+	
 			<div class="site-branding">
 				<a href="/">
 					<h1 class="site-title">
@@ -41,11 +44,10 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container_class' => 'menu' ) ); ?>
 				<div class="button-group">
 					<div class="donate"><div class="donate-border"></div><a href="/#/my/donate" class="btn tr-up">Donate Now</a></div>
-					<div class="institute"><a href="#" class="btn tr-up">DAI Institute</a></div>
+					<?php if ($options['show-institute']): ?><div class="institute"><a href="#" class="btn tr-up">DAI Institute</a></div><?php endif; ?>
 					<div class="menu-button button"><a href="#" class="btn tr-up">Menu</a></div>
 				</div>
 			</nav><!-- #site-navigation -->
-
 	</header><!-- #masthead -->
 	
 	<div id="content" class="site-content">

@@ -147,7 +147,7 @@
         });
       }
     });
-    return $(window).on('load resize', function() {
+    $(window).on('load resize', function() {
       var height;
       if (document.body.className.match('blog')) {
         height = $(window).height() - ($('#masthead').height() + $('#colophon').height());
@@ -187,6 +187,9 @@
         }
       }
     });
+    return document.getElementById('map').ondragstart = function() {
+      return false;
+    };
   });
 
 }).call(this);

@@ -8,14 +8,14 @@
 get_header(); ?>
 
 
-	<div class="content-break jumbotron main">
+	<div class="content-break jumbotron main" style="background-image: url(<?php echo get_field('header_image')['url'] ?>);">
 		<div class="container">
 			<div class="row">
 				<div class="col col-sm-12 col-md-8">
 					<div class="content">
-						<h1 class="shadow tr-up">DAI Empowers<br>Kingdom Leaders</h1>
-						<p class="tr-up">GROWING EFFECTIVE SERVANT LEADERS TO IMPACT THEIR LOCAL COMMUNITIES.</p>
-						<a href="#" class="btn btn-trapezoid trap-bot-right inline-block large">Learn More Now</a>
+						<h1 class="shadow tr-up"><?php the_field('header_title') ?></h1>
+						<p class="tr-up"><?php the_field('header_subtitle') ?></p>
+						<a href="<?php the_field('header_link') ?>" class="btn btn-trapezoid trap-bot-right inline-block large">Learn More Now</a>
 					</div>
 					<div class="trapezoid-background"></div>
 				</div>
@@ -37,44 +37,29 @@ get_header(); ?>
 			</form>
 		</div>
 		<div class="col col-sm-12 col-md-4 social">
-			<div class="col col-sm-3"><div class="social-icon fb"><i class="fa fa-facebook"></i></div></div>
-			<div class="col col-sm-3"><div class="social-icon rss"><i class="fa fa-rss"></i></div></div>
-			<div class="col col-sm-3"><div class="social-icon tw"><i class="fa fa-twitter"></i></div></div>
-			<div class="col col-sm-3"><div class="social-icon ln"><i class="fa fa-linkedin"></i></div></div>
+			<div class="col col-sm-3"><a href="<?php echo get_option('dai_settings')['facebook'] ?>"><div class="social-icon fb"><i class="fa fa-facebook"></i></div></a></div>
+			<div class="col col-sm-3"><a href=""><div class="social-icon rss"><i class="fa fa-rss"></i></div></a></div>
+			<div class="col col-sm-3"><a href="<?php echo get_option('dai_settings')['twitter'] ?>"><div class="social-icon tw"><i class="fa fa-twitter"></i></div></a></div>
+			<div class="col col-sm-3"><a href="<?php echo get_option('dai_settings')['linkedin'] ?>"><div class="social-icon ln"><i class="fa fa-linkedin"></i></div></a></div>
 		</div>
 		<div class="stripes"></div>
 	</div><!-- End Subscription Bar -->
 
 	<section class="impact">
 		<div class="container">
-			<h2 class="shadow-beige tr-up align-center">How DAI Is Making an Impact</h2>
-			<p class="align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+			<h2 class="shadow-beige tr-up align-center"><?php the_field('section_one_title') ?></h2>
+			<p class="align-center"><?php the_field('section_one_subtext') ?></p>
 			<div class="row clear-bottom">
-				<div class="col col-sm-12 fifths align-center">
-					<img src="<?php echo get_template_directory_uri() ?>/public/images/index-education.png" />
-					<strong class="tr-up">Education</strong>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
-				</div>
-				<div class="col col-sm-12 fifths align-center">
-					<img src="<?php echo get_template_directory_uri() ?>/public/images/index-education.png" />
-					<strong class="tr-up">MAOL</strong>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
-				</div>
-				<div class="col col-sm-12 fifths align-center">
-					<img src="<?php echo get_template_directory_uri() ?>/public/images/index-education.png" />
-					<strong class="tr-up">Mentoring</strong>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
-				</div>
-				<div class="col col-sm-12 fifths align-center">
-					<img src="<?php echo get_template_directory_uri() ?>/public/images/index-education.png" />
-					<strong class="tr-up">Consulting</strong>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
-				</div>
-				<div class="col col-sm-12 fifths align-center">
-					<img src="<?php echo get_template_directory_uri() ?>/public/images/index-education.png" />
-					<strong class="tr-up">Connecting</strong>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
-				</div>
+				<?php
+					$i = 0;
+					while ($i++ <= 5):
+				?>
+					<div class="col col-sm-12 fifths align-center">
+						<img src="<?php echo get_field('column_'.$i.'_icon')['url'] ?>" />
+						<strong class="tr-up"><?php the_field('column_'.$i.'_header') ?></strong>
+						<p><?php the_field('column_'.$i.'_text') ?></p>
+					</div>
+				<?php endwhile; ?>
 			</div><!-- .row -->
 		</div>
 	</section><!-- section.impact -->
@@ -93,8 +78,8 @@ get_header(); ?>
 
 	<section>
 		<div class="container align-center-md">
-			<h2 class="shadow-beige tr-up align-center">How DAI Is Making an Impact</h2>
-			<p class="align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+			<h2 class="shadow-beige tr-up align-center"><?php the_field('section_two_title') ?></h2>
+			<p class="align-center"><?php the_field('section_two_subtext') ?></p>
 			<div class="coverflow-container">
 				<div class="arrow left">
 					<img class="left" src="<?php echo get_template_directory_uri(); ?>/public/images/arrow-left.png" />

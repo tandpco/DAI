@@ -1,56 +1,11 @@
-.jumbotron.resources {
-  height: 400px;
-}
-.jumbotron.resources p {
-  font-size: 22px;
-  margin-top: 0px;
-}
-.underline {
-  border-bottom: 1px solid #d2d2d2;
-  margin-bottom: 20px;
-  position: relative;
-}
-.underline h2 {
-  margin-bottom: 0;
-}
-.underline .all {
-  text-decoration: none;
-  color: $dark-gray;
-  font-size: 12px;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  line-height: 36px;
-}
-.resource-list {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-.resource-item {
-  list-style: none;
-  display: inline-block;
-  margin: 0 25px;
-}
-.resource-item strong {
-  margin: 0;
-  font-size: 12px;
-}
-.resource-item p {
-  margin-top: 0;
-  margin-bottom: 5px;
-  font-size: 12px;
-}
-.resource-item .resource-img {
-  display: block;
-  background-color: $red-primary;
-  width: 178px;
-  height: 264px;
-  margin: 0 0 15px 0;
-}
-.resource-item .btn {
-  margin-left: 2%;
-  width: 96%;
-  text-align: center;
-  font-size: 14px;
-}
+.jumbotron.resources{height:400px;}
+.jumbotron.resources p{font-size:22px;margin-top:0}
+.underline{border-bottom:1px solid #d2d2d2;margin-bottom:20px;position:relative;}
+.underline h2{margin-bottom:0}
+.underline .all{text-decoration:none;color:$dark-gray;font-size:12px;position:absolute;bottom:0;right:0;line-height:36px}
+.resource-list{margin:0;padding:0;width:100%}
+.resource-item{list-style:none;display:inline-block;margin:0 25px;}
+.resource-item strong{margin:0;font-size:12px}
+.resource-item p{margin-top:0;margin-bottom:5px;font-size:12px}
+.resource-item .resource-img{display:block;background-color:$red-primary;width:178px;height:264px;margin:0 0 15px 0}
+.resource-item .btn{margin-left:2%;width:96%;text-align:center;font-size:14px}

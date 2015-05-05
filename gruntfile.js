@@ -40,11 +40,7 @@ module.exports = function(grunt) {
           src: ['{,*/}*.styl', '!**/_*'],
           dest: '<%= folders.pub %>/styles',
           ext: '.css'
-        }],
-        options: {
-          compress: false,
-          urlfunc: 'url'
-        }
+        }]
       }
     },
     coffee: {

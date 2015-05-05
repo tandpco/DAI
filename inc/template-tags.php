@@ -56,8 +56,8 @@ function the_post_navigation() {
 		<h2 class="screen-reader-text"><?php _e( 'Post navigation', 'dai' ); ?></h2>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav-previous">%link</div>', '%title' );
-				next_post_link( '<div class="nav-next">%link</div>', '%title' );
+				previous_post_link( '<div class="nav-previous"><i class="fa fa-angle-left"></i>%link</div>', '%title' );
+				next_post_link( '<div class="nav-next">%link<i class="fa fa-angle-right"></i></div>', '%title' );
 			?>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
@@ -84,7 +84,7 @@ function dai_post_navigation() {
 		<div class="nav-links row">
 			<div class="col col-sm-4">
 			<?php
-				previous_post_link( '<div class="nav-previous">%link</div>', 'Last Post' );
+				previous_post_link( '<div class="nav-previous">%link</div>', '<i class="fa fa-angle-left"></i> Last Post' );
 			?>
 			</div>
 
@@ -92,7 +92,7 @@ function dai_post_navigation() {
 
 			<div class="col col-sm-4 align-right ">
 			<?php
-				next_post_link( '<div class="nav-next">%link</div>', 'Next Post' );
+				next_post_link( '<div class="nav-next">%link<i class="fa fa-angle-right"></i></div>', 'Next Post' );
 			?>
 			</div>
 		</div><!-- .nav-links -->
