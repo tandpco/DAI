@@ -7,7 +7,6 @@
 
 get_header(); ?>
 
-
 	<div class="content-break jumbotron main about">
 		<div class="container">
 			<div class="row">
